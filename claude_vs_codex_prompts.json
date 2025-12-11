@@ -1,0 +1,247 @@
+[
+  {
+    "section": "Introduction/Title",
+    "image_number": 1,
+    "image_prompt": "Cinematic split-screen composition showing two glowing AI neural networks facing each other, left side in warm amber/orange tones (Claude Code) with flowing organic circuits, right side in electric blue/cyan tones (Codex) with geometric precision patterns, dark gradient background with subtle code matrix, modern tech aesthetic, dramatic lighting, 3D rendered style, hyperrealistic",
+    "image_description": "Title card establishing the two platforms as distinct but powerful AI systems",
+    "video_loop_prompt": "Camera slowly dollies forward through the center of the split screen while both neural networks pulse with energy, particles flowing between them, subtle rotation of the network structures, seamless loop returning to starting position"
+  },
+  {
+    "section": "Introduction/Title",
+    "image_number": 2,
+    "image_prompt": "Minimalist isometric illustration of a developer's desk from above, laptop screen showing terminal with 'Claude Code' text in amber, surrounded by coffee cup, notebook with 'vs Codex' written, wireless mouse, potted succulent plant, soft shadows, pastel color palette with coral and teal accents, clean vector style, Dribbble aesthetic",
+    "image_description": "Represents the real-world context of choosing between AI coding assistants",
+    "video_loop_prompt": "Gentle parallax effect as camera slowly rotates around the isometric desk, laptop screen text subtly glows and types new characters, steam rises from coffee cup, notebook pages flip slightly, ambient workspace animation"
+  },
+  {
+    "section": "Introduction/Title",
+    "image_number": 3,
+    "image_prompt": "Abstract conceptual art showing two intersecting pathways made of glowing data streams and code fragments, fork in the road visualization, left path illuminated in warm golden light with single-threaded flow, right path in cool blue light with multiple parallel streams, floating holographic screens showing code snippets, cyberpunk meets minimalism, cinematic depth of field",
+    "image_description": "Metaphor for the decision point when choosing an AI agent platform",
+    "video_loop_prompt": "Camera tracks forward along the intersection point, data particles flow continuously along both paths, holographic screens rotate gently, light pulses travel through the pathways, perspective slowly shifts from one path emphasis to the other"
+  },
+  {
+    "section": "Introduction/Title",
+    "image_number": 4,
+    "image_prompt": "Futuristic command center interface mockup, floating transparent panels displaying 'AI Agent Platform Comparison' title in bold sans-serif typography, background shows abstract circuitry and neural network visualizations in dark navy with neon accents, holographic data visualizations, bar charts comparing features, modern UI/UX design, glassmorphism style, 4K detail",
+    "image_description": "Professional presentation of the comparison topic with data-driven aesthetic",
+    "video_loop_prompt": "UI panels gently float and reposition themselves, data on charts animates upward in waves, background neural network pulses rhythmically, holographic elements flicker with information updates, subtle scan lines pass vertically across the interface"
+  },
+  {
+    "section": "Introduction/Title",
+    "image_number": 5,
+    "image_prompt": "Photorealistic 3D render of two modern AI robots shaking hands across a conference table, left robot sleek with warm bronze metallic finish (Claude), right robot angular with chrome silver finish (Codex), both with glowing chest displays showing code, floor-to-ceiling windows showing abstract city skyline, professional lighting, octane render quality",
+    "image_description": "Humanizes the platforms while showing them as complementary rather than adversarial",
+    "video_loop_prompt": "Camera slowly orbits around the handshake, chest displays cycle through different code snippets, subtle head movements suggest active conversation, ambient light from windows shifts gently, reflections animate on the polished table surface"
+  },
+  {
+    "section": "Claude Code Showcase",
+    "image_number": 6,
+    "image_prompt": "Detailed terminal interface screenshot showing Claude Code CLI in action, dark theme with amber/orange accent colors, visible command 'claude chat' with conversational response, file tree on left sidebar, code editor panel showing Python with syntax highlighting, status bar showing 'Interactive Mode', realistic terminal aesthetics with slight CRT glow effect, authentic developer environment",
+    "image_description": "Shows Claude Code's interactive CLI interface and conversational approach",
+    "video_loop_prompt": "Text types out letter-by-letter in the terminal, cursor blinks naturally, file tree items highlight as they're referenced, code in the editor panel updates with subtle animations, status indicators pulse, scrollbar moves to show context awareness"
+  },
+  {
+    "section": "Claude Code Showcase",
+    "image_number": 7,
+    "image_prompt": "Artistic visualization of a single glowing thread weaving through a 3D code structure, thread is warm amber color representing Claude's sequential processing, passing through floating code blocks and file icons in organized progression, each touched element illuminates briefly, dark void background, volumetric lighting, represents thoughtful step-by-step execution",
+    "image_description": "Illustrates Claude Code's sequential, context-aware processing approach",
+    "video_loop_prompt": "Golden thread continuously weaves through the code structure, starting from bottom left and traveling to top right, code blocks light up in sequence as thread passes through them, gentle rotation of entire structure, thread leaves brief light trail that fades"
+  },
+  {
+    "section": "Claude Code Showcase",
+    "image_number": 8,
+    "image_prompt": "Split-panel mockup showing human developer on left typing question in natural language 'How should I refactor this authentication module?', right panel shows Claude Code's detailed response with code suggestions, explanation paragraphs, and follow-up questions, clean interface design, conversational bubbles, warm color scheme, emphasizes dialogue",
+    "image_description": "Demonstrates Claude Code's conversational and explanatory nature",
+    "video_loop_prompt": "Developer's question types out naturally, followed by Claude's response appearing in smooth scrolling animation, code blocks highlight relevant sections, subtle thinking indicator between messages, gentle highlighting of key points in the explanation"
+  },
+  {
+    "section": "Claude Code Showcase",
+    "image_number": 9,
+    "image_prompt": "Isometric 3D illustration of a developer sitting at floating workspace, connected via glowing amber cord to large friendly AI brain above, brain shows thought bubbles with code snippets and documentation pages, tool icons orbit around (magnifying glass for research, wrench for fixes, lightbulb for suggestions), cozy and collaborative atmosphere, warm lighting, vector illustration style",
+    "image_description": "Represents Claude Code's role as an interactive pair programming assistant",
+    "video_loop_prompt": "Developer's hands type causing brain to pulse with activity, thought bubbles emerge and float upward, tool icons orbit continuously, code snippets rotate and update, gentle bounce animation on the workspace platform, warm glow intensifies during 'thinking' moments"
+  },
+  {
+    "section": "Claude Code Showcase",
+    "image_number": 10,
+    "image_prompt": "Detailed infographic showing Claude Code's workflow: circular diagram with center hub labeled 'Context Understanding', connected nodes showing 'Read Files', 'Analyze Patterns', 'Suggest Changes', 'Explain Reasoning', 'Wait for Confirmation', arrows showing sequential flow, each node has relevant icon, professional technical documentation style, amber and charcoal color scheme",
+    "image_description": "Technical breakdown of Claude Code's interactive workflow pattern",
+    "video_loop_prompt": "Animated data flows along arrows from node to node in clockwise motion, each node pulses when activated, mini icons within nodes demonstrate their function, progress indicator sweeps around the circle, center hub rotates slowly with neural network visualization"
+  },
+  {
+    "section": "Claude Code Showcase",
+    "image_number": 11,
+    "image_prompt": "Cinematic close-up of hands typing on mechanical keyboard with backlit amber keys, screen reflection in glasses showing Claude Code CLI interface, multiple monitors in background with code and documentation, coffee cup steaming beside mouse, golden hour lighting through window, photorealistic style, depth of field blur, captures focused developer workflow",
+    "image_description": "Human-centric view of working with Claude Code's interactive environment",
+    "video_loop_prompt": "Fingers type naturally on keyboard, screen reflection in glasses updates with scrolling text, steam rises from coffee, background monitors cycle through different code views, ambient lighting shifts subtly, slight head movement suggesting reading"
+  },
+  {
+    "section": "Codex Showcase",
+    "image_number": 12,
+    "image_prompt": "Dynamic visualization of multiple parallel processing streams, six bright blue/cyan threads executing simultaneously through a pipeline architecture, each thread working on different files shown as floating documents, industrial efficiency aesthetic, blueprint grid background, sharp geometric shapes, represents distributed task execution, technical schematic style",
+    "image_description": "Illustrates Codex's parallel execution capabilities for multiple tasks",
+    "video_loop_prompt": "Six threads flow continuously from left to right at different speeds, files move along conveyor-like paths, completion checkmarks appear on finished files, new files queue up on the left, threads occasionally split and merge, industrial mechanical rhythm"
+  },
+  {
+    "section": "Codex Showcase",
+    "image_number": 13,
+    "image_prompt": "Futuristic command center showing Codex orchestration dashboard, large central screen displaying task tree with branching subtasks, side panels showing agent status indicators (6 agents active), file system explorer, execution logs scrolling in real-time, progress bars for multiple concurrent operations, cool blue/purple color scheme, holographic UI elements, professional mission control aesthetic",
+    "image_description": "Shows Codex's centralized control interface for managing multiple agents",
+    "video_loop_prompt": "Task tree branches expand as new subtasks spawn, agent status indicators pulse and update with completion states, logs scroll continuously, progress bars fill at varying rates, holographic elements flicker with data updates, subtle camera zoom adjusts to focus on different panels"
+  },
+  {
+    "section": "Codex Showcase",
+    "image_number": 14,
+    "image_prompt": "Abstract 3D render of a central AI core (blue glowing sphere) with six mechanical arms extending outward, each arm reaching toward different code repositories represented as floating cubes with file icons, arms work independently but coordinated, industrial robot aesthetic meets cyberpunk, dramatic lighting with blue rim lights, represents autonomous task distribution",
+    "image_description": "Metaphor for Codex's ability to spawn and manage multiple independent agents",
+    "video_loop_prompt": "Central sphere rotates slowly while pulsing, mechanical arms extend and retract at different rates, each arm picks up a code cube, processes it (cube glows), then sets it down completed, new cubes materialize in the workspace, coordinated choreography"
+  },
+  {
+    "section": "Codex Showcase",
+    "image_number": 15,
+    "image_prompt": "Architectural diagram showing Codex system layers: bottom layer 'Task Queue' with multiple items, middle layer 'Agent Pool' with worker nodes, top layer 'Aggregation' combining results, data flowing upward through the stack, technical documentation style, blueprint aesthetic with cyan accent lines, isometric perspective, enterprise architecture visualization",
+    "image_description": "Technical breakdown of Codex's scalable architecture design",
+    "video_loop_prompt": "Tasks appear in the queue at the bottom, animate upward to available agents in middle layer, agents process them with spinning indicators, completed results flow up to aggregation layer where they merge together, continuous cycle of task distribution"
+  },
+  {
+    "section": "Codex Showcase",
+    "image_number": 16,
+    "image_prompt": "Split-screen showing left side: single agent processing 100 files sequentially with timer showing '50 minutes', right side: Codex with 10 agents processing same 100 files in parallel with timer showing '5 minutes', visual representation of files as stacked documents being distributed, speedometer graphics, efficiency comparison, infographic style",
+    "image_description": "Direct visual comparison of serial vs parallel execution efficiency",
+    "video_loop_prompt": "Left side timer counts up slowly with files processing one-by-one, right side timer advances faster with multiple files processing simultaneously, progress bars fill at dramatically different rates, checkmarks appear on completed files, visual emphasis on time difference"
+  },
+  {
+    "section": "Codex Showcase",
+    "image_number": 17,
+    "image_prompt": "Cinematic wide shot of a warehouse-scale operation, rows of blue-lit server racks, holographic displays showing Codex coordinating massive parallel operations, data streams flowing between racks, industrial scale computing aesthetic, cool blue and cyan lighting, fog effects between aisles, represents enterprise-grade scalability, photorealistic rendering",
+    "image_description": "Conveys Codex's capability for large-scale batch operations",
+    "video_loop_prompt": "Camera slowly tracks down the server aisle, data streams pulse through fiber optic cables, holographic displays update with statistics, occasional server lights blink in patterns, fog drifts atmospherically, distant racks visible in background showing depth"
+  },
+  {
+    "section": "Comparison Visuals",
+    "image_number": 18,
+    "image_prompt": "Side-by-side comparison table design, left column 'Claude Code' in amber header with icons for 'Interactive', 'Conversational', 'Context-Aware', 'Sequential', right column 'Codex' in blue header with icons for 'Autonomous', 'Parallel', 'Scalable', 'Batch-Oriented', middle column shows use case icons, modern infographic style, clean typography, professional presentation",
+    "image_description": "Direct feature comparison in structured table format",
+    "video_loop_prompt": "Features illuminate one by one from top to bottom, icons animate to demonstrate their function, highlighting sweeps down each column, checkmarks appear next to applicable use cases, subtle gradient background shifts between amber and blue zones"
+  },
+  {
+    "section": "Comparison Visuals",
+    "image_number": 19,
+    "image_prompt": "Venn diagram visualization with two overlapping circles, left circle 'Claude Code' (amber/orange) showing 'Deep reasoning, Explanation, Learning', right circle 'Codex' (cyan/blue) showing 'Speed, Scale, Automation', overlap area in purple showing 'Code Quality, AI-Powered, Developer Tools', floating on dark gradient, minimalist design with icons in each section",
+    "image_description": "Shows overlapping and unique capabilities of both platforms",
+    "video_loop_prompt": "Circles gently pulse and breathe, overlap area intensifies in brightness periodically, icons rotate or bounce subtly, particles flow from outer unique areas toward the shared center, text labels fade in and out with different aspects highlighted"
+  },
+  {
+    "section": "Comparison Visuals",
+    "image_number": 20,
+    "image_prompt": "Radar/spider chart comparing 6 dimensions: 'Interactivity', 'Speed', 'Scalability', 'Context Understanding', 'Ease of Use', 'Batch Processing', amber polygon for Claude Code overlapping blue polygon for Codex, dark background with grid lines, modern data visualization style, clear labels, professional analytics aesthetic",
+    "image_description": "Multi-dimensional comparison showing strengths of each platform",
+    "video_loop_prompt": "Polygons draw outward from center point by point, each axis highlights as the polygon reaches it, subtle rotation of the entire chart, grid lines pulse subtly, comparison area where polygons overlap highlights with gradient blend"
+  },
+  {
+    "section": "Comparison Visuals",
+    "image_number": 21,
+    "image_prompt": "Metaphorical split illustration: left side shows single master craftsman (Claude Code) carefully hand-carving detailed wooden sculpture with focused attention, right side shows efficient factory floor (Codex) with multiple robotic arms assembling products in parallel, both high quality output, different methodologies, artistic contrast between artisan and industrial approaches",
+    "image_description": "Visual metaphor for interactive craftsmanship vs automated efficiency",
+    "video_loop_prompt": "Craftsman's hands work slowly and deliberately with tools, wood shavings fall, right side robotic arms move in coordinated rhythm, products move along assembly line, camera slowly pans between the two scenes, highlighting the philosophical difference"
+  },
+  {
+    "section": "Comparison Visuals",
+    "image_number": 22,
+    "image_prompt": "Flowchart decision tree helping viewers choose: top node 'Your Project Needs', branches asking questions like 'Need human oversight?' (→Claude), 'Processing 100+ files?' (→Codex), 'Complex reasoning required?' (→Claude), 'Time-critical automation?' (→Codex), modern flowchart design with rounded boxes, directional arrows, clear yes/no paths, educational infographic style",
+    "image_description": "Practical decision-making guide for platform selection",
+    "video_loop_prompt": "Highlight flows down the tree following one decision path, then resets and shows alternate path, question boxes pulse when active, arrows glow as they're traversed, end result boxes (Claude/Codex) illuminate when reached, multiple path variations shown"
+  },
+  {
+    "section": "Comparison Visuals",
+    "image_number": 23,
+    "image_prompt": "Timeline visualization showing development workflow, top track 'With Claude Code' showing iterative process with conversation bubbles and refinement cycles over 2 hours, bottom track 'With Codex' showing setup phase then rapid parallel execution over 30 minutes, timeline marked with key milestones, process diagram aesthetic, horizontal gantt-style layout",
+    "image_description": "Temporal comparison of how projects progress with each platform",
+    "video_loop_prompt": "Progress markers move along both timelines at appropriate speeds, conversation bubbles pop up on Claude track, task completion checkmarks rapid-fire on Codex track, time indicators count up, highlight shows where each platform reaches completion"
+  },
+  {
+    "section": "Use Cases",
+    "image_number": 24,
+    "image_prompt": "Scene showing developer debugging complex issue: laptop screen displays Claude Code helping trace through nested function calls, sticky notes on wall with logic flow, coffee cup, rubber duck on desk, ambient workspace lighting, Claude's responses shown explaining each step of the bug trace, collaborative problem-solving atmosphere, realistic photography style",
+    "image_description": "Use case: Interactive debugging and problem-solving with Claude Code",
+    "video_loop_prompt": "Developer types questions, Claude's explanations appear on screen, cursor highlights relevant code sections, developer nods and makes notes, rubber duck appears to 'listen', screen content updates showing bug getting closer to resolution, satisfying 'aha moment' at end"
+  },
+  {
+    "section": "Use Cases",
+    "image_number": 25,
+    "image_prompt": "Visualization of large-scale refactoring: hundreds of file icons arranged in repository structure, Codex agents (shown as blue worker bots) simultaneously updating multiple files, progress dashboard showing '47/200 files processed', consistency checks passing, before/after code diffs, automation in action, technical operation aesthetic",
+    "image_description": "Use case: Bulk refactoring across large codebase with Codex",
+    "video_loop_prompt": "Files change from gray (pending) to blue (processing) to green (complete) in waves, multiple worker bots move between files, progress counter rapidly increments, dashboard charts update showing increasing completion percentage, satisfying mass automation visualization"
+  },
+  {
+    "section": "Use Cases",
+    "image_number": 26,
+    "image_prompt": "Learning scenario: split screen showing student asking Claude Code 'Why does this algorithm use recursion?', Claude's response with visual diagrams explaining recursion concept, call stack visualization, example code with annotations, educational context, warm encouraging colors, teaching moment captured, whiteboard aesthetic elements",
+    "image_description": "Use case: Learning and understanding code concepts with Claude Code",
+    "video_loop_prompt": "Question appears as typed, Claude's explanation unfolds paragraph by paragraph, recursion diagram animates showing function calls stacking and unwinding, code highlights relevant lines, lightbulb icon appears representing understanding achieved"
+  },
+  {
+    "section": "Use Cases",
+    "image_number": 27,
+    "image_prompt": "CI/CD pipeline visualization: automated testing scenario with Codex running parallel test suites, multiple test runners executing simultaneously across different environments (shown as colored lanes), real-time results aggregating in central dashboard, Jenkins/GitHub Actions aesthetic, modern DevOps workflow, technical efficiency",
+    "image_description": "Use case: Automated testing and CI/CD integration with Codex",
+    "video_loop_prompt": "Test suites launch in parallel lanes, individual tests complete with green checkmarks or red X marks, progress bars fill, results stream into central aggregation view, final pass/fail verdict appears, represents continuous integration automation"
+  },
+  {
+    "section": "Use Cases",
+    "image_number": 28,
+    "image_prompt": "Code review scenario: pull request interface showing Claude Code analyzing changes, inline comments with suggestions and explanations, security concerns highlighted with reasoning, code quality improvements suggested, GitHub-style interface, collaborative review process, constructive feedback visualization, professional development workflow",
+    "image_description": "Use case: AI-assisted code review with detailed explanations via Claude Code",
+    "video_loop_prompt": "PR diff scrolls through changes, Claude's comment bubbles appear at relevant lines, highlighted code sections pulse to draw attention, suggestion boxes expand with detailed reasoning, approval checkmarks appear on reviewed sections, quality score updates"
+  },
+  {
+    "section": "Use Cases",
+    "image_number": 29,
+    "image_prompt": "Documentation generation scene: Codex processing entire codebase (shown as file tree), extracting function signatures, generating markdown documentation files, creating API reference, building knowledge base, multiple output formats simultaneously, documentation pipeline, technical writing automation, organized chaos becoming structured docs",
+    "image_description": "Use case: Automated documentation generation at scale with Codex",
+    "video_loop_prompt": "Files in tree highlight as they're scanned, documentation pages generate and stack up, markdown syntax appears in real-time, navigation menu builds itself, search index populates, final polished documentation site assembles from components"
+  },
+  {
+    "section": "Conclusion",
+    "image_number": 30,
+    "image_prompt": "Inspiring hero shot: developer standing at modern desk with dual monitors, left monitor showing Claude Code for active development, right monitor showing Codex dashboard managing background tasks, both platforms working in harmony, large windows showing dawn/sunrise, symbolizing new era of AI-assisted development, cinematic lighting, aspirational tone",
+    "image_description": "Both platforms as complementary tools in modern developer workflow",
+    "video_loop_prompt": "Camera slowly pushes in toward the setup, monitors display active work, sunrise light gradually intensifies through window, subtle head movement as developer switches focus between monitors, represents balanced use of both tools"
+  },
+  {
+    "section": "Conclusion",
+    "image_number": 31,
+    "image_prompt": "Abstract data network visualization: two distinct AI neural networks (amber and cyan) merging pathways into unified developer ecosystem, nodes representing different use cases interconnected, holographic effect, particles flowing through connections, represents the idea that both platforms serve the broader mission of better software development",
+    "image_description": "Conceptual unity: both platforms advancing the field together",
+    "video_loop_prompt": "Networks pulse with activity, particles travel along connections, nodes light up representing different use cases activating, camera rotates around the structure, pathways brighten and dim rhythmically, converging toward center representing developer success"
+  },
+  {
+    "section": "Conclusion",
+    "image_number": 32,
+    "image_prompt": "Minimalist end card design: clean typography stating 'Choose Your Tool', 'Match Your Workflow', 'Build Better Software', split background with amber-to-cyan gradient, subtle code patterns in background, modern sans-serif font, professional and encouraging, call-to-action aesthetic, links to both platforms",
+    "image_description": "Final message encouraging informed platform selection",
+    "video_loop_prompt": "Text lines fade in sequentially, gradient slowly shifts, code pattern scrolls gently upward, subtle glow effect on key words, platform logos fade in at bottom, soft particle effects float across the frame"
+  },
+  {
+    "section": "Conclusion",
+    "image_number": 33,
+    "image_prompt": "Forward-looking concept: futuristic cityscape at night, windows lit up showing countless developers using AI tools, holographic code streams flowing between buildings, represents global development community empowered by AI agents, aerial perspective, cyberpunk aesthetic meets hopeful future, neon lights reflecting on surfaces, wide cinematic shot",
+    "image_description": "The bigger picture: AI agents transforming software development globally",
+    "video_loop_prompt": "Camera slowly rises above the cityscape, windows flicker with activity, code streams flow like data highways, occasional holographic displays pop up showing completed projects, ambient city lights pulse, represents thriving developer ecosystem"
+  },
+  {
+    "section": "Introduction/Title",
+    "image_number": 34,
+    "image_prompt": "Animated logo reveal concept: mechanical assembly of Claude Code and Codex logos forming from floating geometric fragments, pieces snap together with precision, brand colors illuminate as logos complete, technical blueprint background, satisfying mechanical animation aesthetic, professional brand presentation",
+    "image_description": "Brand introduction establishing both platforms visually",
+    "video_loop_prompt": "Geometric fragments float in chaotic arrangement, suddenly snap into organized formation, logos assemble piece by piece with mechanical sounds implied, colors wash over completed logos, brief pause at full formation, then disassemble and loop"
+  },
+  {
+    "section": "Comparison Visuals",
+    "image_number": 35,
+    "image_prompt": "Chess metaphor visualization: left side shows chess master (Claude Code) carefully contemplating each move with deep strategy, right side shows multiple chess games being played simultaneously by coordinated team (Codex), different approaches to the same challenge, overhead view of chess boards, dramatic lighting, strategic thinking visualization",
+    "image_description": "Strategic metaphor for deep focus vs parallel execution approaches",
+    "video_loop_prompt": "Master studies board then makes deliberate move, simultaneously multiple boards show coordinated moves happening in parallel, pieces move on their own, timer shows time comparisons, represents different but effective strategies"
+  }
+]

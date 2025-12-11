@@ -1,0 +1,196 @@
+{
+  "prompts": [
+    {
+      "section": "Introduction",
+      "image_number": 1,
+      "image_prompt": "A modern tech workspace with multiple monitors displaying code and dashboards, clean minimalist aesthetic, professional lighting, wide angle shot, 8k resolution, photorealistic",
+      "description": "Developer Workspace Overview"
+    },
+    {
+      "section": "Introduction",
+      "image_number": 2,
+      "image_prompt": "A cinematic visualization of AI and automation symbols, interconnected neural networks with glowing nodes, blue and purple holographic effects, futuristic technology aesthetic, 8k resolution",
+      "description": "AI Automation Concept"
+    },
+    {
+      "section": "Introduction",
+      "image_number": 3,
+      "image_prompt": "A professional diagram showing workflow automation, flowchart with connected nodes and arrows, clean modern design, blue and gray color scheme, technical illustration style, 8k resolution",
+      "description": "Workflow Automation Diagram"
+    },
+    {
+      "section": "Cloud Infrastructure",
+      "image_number": 4,
+      "image_prompt": "A dramatic visualization of cloud data centers with glowing server racks, blue atmospheric lighting, dramatic perspective, high tech aesthetic, cinematic composition, 8k resolution",
+      "description": "Cloud Data Center"
+    },
+    {
+      "section": "Cloud Infrastructure",
+      "image_number": 5,
+      "image_prompt": "An isometric illustration of cloud infrastructure architecture, servers, databases, and network connections, clean professional style, blue and white color scheme, technical diagram, 8k resolution",
+      "description": "Cloud Architecture Diagram"
+    },
+    {
+      "section": "Cloud Infrastructure",
+      "image_number": 6,
+      "image_prompt": "A cinematic visualization of data flowing through cloud networks, glowing data packets moving through fiber optic cables, blue and green lighting effects, high tech aesthetic, 8k resolution",
+      "description": "Cloud Data Flow"
+    },
+    {
+      "section": "DevOps Tools",
+      "image_number": 7,
+      "image_prompt": "A modern visualization of CI/CD pipeline with Docker containers and deployment stages, clean tech illustration, blue accent colors, dark background, professional style, 8k resolution",
+      "description": "CICD Pipeline Visualization"
+    },
+    {
+      "section": "DevOps Tools",
+      "image_number": 8,
+      "image_prompt": "A professional screenshot of a modern DevOps dashboard with graphs, metrics, and deployment status, clean UI design, dark theme, green success indicators, high detail, 8k resolution",
+      "description": "DevOps Dashboard"
+    },
+    {
+      "section": "DevOps Tools",
+      "image_number": 9,
+      "image_prompt": "A technical visualization of Git version control branching strategy, colorful branch lines merging and diverging, clean diagram style, professional tech illustration, 8k resolution",
+      "description": "Git Branching Strategy"
+    },
+    {
+      "section": "Security",
+      "image_number": 10,
+      "image_prompt": "A cinematic visualization of cybersecurity with digital shield protecting network infrastructure, blue holographic effects, dramatic lighting, high tech aesthetic, 8k resolution",
+      "description": "Cybersecurity Shield"
+    },
+    {
+      "section": "Security",
+      "image_number": 11,
+      "image_prompt": "A professional visualization of encryption process with lock icons and encrypted data streams, green and blue color scheme, secure tech aesthetic, cinematic composition, 8k resolution",
+      "description": "Encryption Process"
+    },
+    {
+      "section": "Security",
+      "image_number": 12,
+      "image_prompt": "A modern security operations center with multiple screens showing threat monitoring dashboards, professional environment, blue ambient lighting, wide angle shot, 8k resolution, photorealistic",
+      "description": "Security Operations Center"
+    },
+    {
+      "section": "Database Systems",
+      "image_number": 13,
+      "image_prompt": "A 3D visualization of database architecture with interconnected data nodes and tables, holographic UI elements, blue and white color scheme, modern tech aesthetic, 8k resolution",
+      "description": "Database Architecture"
+    },
+    {
+      "section": "Database Systems",
+      "image_number": 14,
+      "image_prompt": "A cinematic visualization of data replication across multiple database servers, glowing data streams synchronizing, blue and green lighting effects, high tech style, 8k resolution",
+      "description": "Database Replication"
+    },
+    {
+      "section": "Database Systems",
+      "image_number": 15,
+      "image_prompt": "A professional diagram of database scaling with master-slave architecture, clean technical illustration, blue and gray color palette, modern documentation style, 8k resolution",
+      "description": "Database Scaling Diagram"
+    },
+    {
+      "section": "Monitoring",
+      "image_number": 16,
+      "image_prompt": "A professional monitoring dashboard with real-time graphs showing CPU, memory, and network metrics, modern dark theme UI, colorful data visualizations, high detail, 8k resolution",
+      "description": "System Monitoring Dashboard"
+    },
+    {
+      "section": "Monitoring",
+      "image_number": 17,
+      "image_prompt": "A cinematic visualization of alert notification system with glowing notification icons and warning indicators, blue and amber lighting, modern tech aesthetic, 8k resolution",
+      "description": "Alert System Visualization"
+    },
+    {
+      "section": "Monitoring",
+      "image_number": 18,
+      "image_prompt": "A professional network topology map with status indicators, real-time health monitoring, clean UI design, green success states, dark theme, high detail, 8k resolution",
+      "description": "Network Monitoring Map"
+    },
+    {
+      "section": "API Development",
+      "image_number": 19,
+      "image_prompt": "A modern visualization of REST API architecture with HTTP methods and endpoints, clean technical diagram, blue and white color scheme, professional style, 8k resolution",
+      "description": "REST API Architecture"
+    },
+    {
+      "section": "API Development",
+      "image_number": 20,
+      "image_prompt": "A cinematic visualization of microservices architecture with interconnected services and API gateways, holographic effects, blue lighting, modern tech aesthetic, 8k resolution",
+      "description": "Microservices Architecture"
+    },
+    {
+      "section": "API Development",
+      "image_number": 21,
+      "image_prompt": "A professional screenshot of API documentation interface with code examples and endpoints, clean modern UI, syntax highlighted code, dark theme, 8k resolution",
+      "description": "API Documentation Interface"
+    },
+    {
+      "section": "Testing",
+      "image_number": 22,
+      "image_prompt": "A modern visualization of automated testing pipeline with test cases running in parallel, green checkmarks for passing tests, professional tech illustration, 8k resolution",
+      "description": "Automated Testing Pipeline"
+    },
+    {
+      "section": "Testing",
+      "image_number": 23,
+      "image_prompt": "A professional test coverage report visualization with code coverage metrics and graphs, clean UI design, green success indicators, modern style, 8k resolution",
+      "description": "Test Coverage Report"
+    },
+    {
+      "section": "Testing",
+      "image_number": 24,
+      "image_prompt": "A cinematic visualization of performance testing with load graphs and response time metrics, blue and green data visualizations, high tech aesthetic, 8k resolution",
+      "description": "Performance Testing Dashboard"
+    },
+    {
+      "section": "Deployment",
+      "image_number": 25,
+      "image_prompt": "A modern visualization of blue-green deployment strategy with two environments, clean technical diagram, blue and green color coding, professional style, 8k resolution",
+      "description": "Blue-Green Deployment"
+    },
+    {
+      "section": "Deployment",
+      "image_number": 26,
+      "image_prompt": "A professional screenshot of Kubernetes cluster dashboard showing pods, services, and deployments, modern UI design, colorful status indicators, 8k resolution",
+      "description": "Kubernetes Dashboard"
+    },
+    {
+      "section": "Deployment",
+      "image_number": 27,
+      "image_prompt": "A cinematic visualization of rolling deployment with containers updating in sequence, glowing progress indicators, blue lighting effects, high tech style, 8k resolution",
+      "description": "Rolling Deployment Process"
+    },
+    {
+      "section": "Analytics",
+      "image_number": 28,
+      "image_prompt": "A professional analytics dashboard with real-time data visualizations, graphs, charts, and KPI metrics, modern dark theme UI, colorful data displays, 8k resolution",
+      "description": "Analytics Dashboard"
+    },
+    {
+      "section": "Analytics",
+      "image_number": 29,
+      "image_prompt": "A cinematic visualization of data pipeline with ETL processes, data flowing through transformation stages, holographic effects, blue and purple lighting, 8k resolution",
+      "description": "Data Pipeline Visualization"
+    },
+    {
+      "section": "Analytics",
+      "image_number": 30,
+      "image_prompt": "A modern business intelligence dashboard with interactive charts and trend analysis, professional UI design, clean layout, colorful data visualizations, 8k resolution",
+      "description": "Business Intelligence Dashboard"
+    },
+    {
+      "section": "Conclusion",
+      "image_number": 31,
+      "image_prompt": "A futuristic visualization of integrated technology ecosystem with all systems connected, holographic network visualization, blue and purple lighting, cinematic composition, 8k resolution",
+      "description": "Integrated Tech Ecosystem"
+    },
+    {
+      "section": "Conclusion",
+      "image_number": 32,
+      "image_prompt": "A professional team collaboration scene in modern tech office, developers working together on projects, natural lighting, wide angle shot, contemporary workspace, 8k resolution, photorealistic",
+      "description": "Team Collaboration"
+    }
+  ]
+}

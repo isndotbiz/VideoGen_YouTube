@@ -1,0 +1,14 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#F9FAFB"/>
+  <!-- Left side: Claude Code -->
+  <rect x="100" y="200" width="700" height="680" rx="20" fill="#3B82F6" opacity="0.1" stroke="#3B82F6" stroke-width="3"/>
+  <text x="450" y="500" font-size="80" font-weight="bold" text-anchor="middle" fill="#3B82F6" font-family="Arial">Claude</text>
+  <text x="450" y="600" font-size="80" font-weight="bold" text-anchor="middle" fill="#3B82F6" font-family="Arial">Code</text>
+  <!-- Center: VS -->
+  <circle cx="960" cy="540" r="100" fill="white" stroke="#000" stroke-width="3"/>
+  <text x="960" y="600" font-size="80" font-weight="bold" text-anchor="middle" fill="#000" font-family="Arial">VS</text>
+  <!-- Right side: Codex -->
+  <rect x="1120" y="200" width="700" height="680" rx="20" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="3"/>
+  <text x="1470" y="500" font-size="80" font-weight="bold" text-anchor="middle" fill="#F97316" font-family="Arial">Codex</text>
+  <text x="1470" y="600" font-size="80" font-weight="bold" text-anchor="middle" fill="#F97316" font-family="Arial">(GPT-5)</text>
+</svg>

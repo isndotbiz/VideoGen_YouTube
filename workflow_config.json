@@ -1,0 +1,225 @@
+{
+  "workflow": {
+    "name": "AI Video Generation Pipeline",
+    "description": "Complete workflow from script to published video",
+    "version": "1.0.0"
+  },
+  "stages": {
+    "1_script_generation": {
+      "enabled": true,
+      "name": "Script Generation",
+      "description": "Generate video script from JSONL data",
+      "config": {
+        "inputFormat": "jsonl",
+        "outputFormat": "markdown",
+        "maxLength": 500,
+        "includeTimestamps": true,
+        "includeSceneDescriptions": true
+      },
+      "ai": {
+        "provider": "none",
+        "model": "gpt-4",
+        "temperature": 0.7,
+        "maxTokens": 2000
+      }
+    },
+    "2_voice_generation": {
+      "enabled": true,
+      "name": "Voice Narration",
+      "description": "Generate voice-over from script",
+      "provider": "elevenlabs",
+      "config": {
+        "voiceId": "21m00Tcm4TlvDq8ikWAM",
+        "voiceName": "Rachel",
+        "model": "eleven_multilingual_v2",
+        "stability": 0.5,
+        "similarityBoost": 0.75,
+        "style": 0.0,
+        "useSpeakerBoost": true
+      },
+      "output": {
+        "format": "mp3",
+        "bitrate": "192k",
+        "normalize": true
+      }
+    },
+    "3_image_generation": {
+      "enabled": true,
+      "name": "Image Generation",
+      "description": "Generate AI images for video scenes",
+      "provider": "fal",
+      "config": {
+        "model": "flux/dev",
+        "imagesPerScene": 1,
+        "resolution": {
+          "width": 1920,
+          "height": 1080
+        },
+        "guidanceScale": 7.5,
+        "numInferenceSteps": 50,
+        "seed": -1,
+        "scheduler": "DPMSolverMultistep"
+      },
+      "stylePresets": {
+        "default": "professional, high quality, detailed",
+        "tech": "modern, sleek, technological, futuristic",
+        "business": "professional, corporate, clean, polished",
+        "creative": "artistic, creative, colorful, dynamic",
+        "minimal": "minimalist, clean, simple, elegant"
+      },
+      "negativePrompt": "blurry, low quality, distorted, watermark, text, signature"
+    },
+    "4_video_assembly": {
+      "enabled": true,
+      "name": "Video Assembly",
+      "description": "Combine images, audio, and effects into video",
+      "provider": "shotstack",
+      "config": {
+        "timeline": {
+          "soundtrack": {
+            "effect": "fadeInFadeOut",
+            "volume": 1.0
+          },
+          "background": "#000000",
+          "fonts": []
+        },
+        "clips": {
+          "defaultDuration": 5,
+          "transition": {
+            "in": "fade",
+            "out": "fade"
+          },
+          "effect": "zoomIn",
+          "fit": "cover",
+          "scale": 1.0
+        },
+        "output": {
+          "format": "mp4",
+          "resolution": "1080",
+          "fps": 30,
+          "quality": "high"
+        }
+      }
+    },
+    "5_post_processing": {
+      "enabled": true,
+      "name": "Post-Processing",
+      "description": "Final touches and optimization",
+      "config": {
+        "addIntro": false,
+        "introTemplate": "./templates/intro.mp4",
+        "addOutro": false,
+        "outroTemplate": "./templates/outro.mp4",
+        "addWatermark": false,
+        "watermarkFile": "./assets/watermark.png",
+        "addSubtitles": false,
+        "subtitlesLanguage": "en"
+      },
+      "optimization": {
+        "compress": true,
+        "targetSize": "100MB",
+        "quality": "high",
+        "removeMetadata": false
+      }
+    },
+    "6_upload": {
+      "enabled": false,
+      "name": "Upload & Publish",
+      "description": "Upload to platforms",
+      "platforms": {
+        "youtube": {
+          "enabled": false,
+          "privacy": "private",
+          "category": "22",
+          "tags": [],
+          "description": "",
+          "madeForKids": false,
+          "defaultLanguage": "en"
+        },
+        "vimeo": {
+          "enabled": false,
+          "privacy": "private"
+        },
+        "s3": {
+          "enabled": false,
+          "bucket": "",
+          "region": "us-east-1",
+          "acl": "private"
+        }
+      }
+    }
+  },
+  "timing": {
+    "sceneAnalysis": {
+      "method": "auto",
+      "wordsPerSecond": 2.5,
+      "minSceneDuration": 3,
+      "maxSceneDuration": 10,
+      "pauseBetweenScenes": 0.5
+    },
+    "narration": {
+      "speed": 1.0,
+      "addPauses": true,
+      "pauseDuration": 0.5,
+      "emphasizeKeyPoints": true
+    }
+  },
+  "validation": {
+    "checkScriptLength": true,
+    "checkImageQuality": true,
+    "checkAudioSync": true,
+    "checkVideoDuration": true,
+    "maxTotalDuration": 300
+  },
+  "error_handling": {
+    "retryOnFailure": true,
+    "maxRetries": 3,
+    "continueOnError": false,
+    "savePartialResults": true,
+    "notifyOnError": false
+  },
+  "caching": {
+    "enabled": true,
+    "cacheImages": true,
+    "cacheAudio": true,
+    "cacheVideos": false,
+    "ttl": 3600
+  },
+  "logging": {
+    "level": "INFO",
+    "logToFile": true,
+    "logFile": "./logs/workflow.log",
+    "includeTimestamps": true,
+    "includeStageInfo": true
+  },
+  "templates": {
+    "scriptTemplate": "./templates/script.md",
+    "imagePromptTemplate": "./templates/image_prompt.txt",
+    "videoDescription": "./templates/description.txt"
+  },
+  "presets": {
+    "quick": {
+      "description": "Fast generation with lower quality",
+      "imageSteps": 25,
+      "videoQuality": "medium",
+      "parallelProcessing": true
+    },
+    "balanced": {
+      "description": "Balanced speed and quality",
+      "imageSteps": 50,
+      "videoQuality": "high",
+      "parallelProcessing": true
+    },
+    "premium": {
+      "description": "Highest quality, slower generation",
+      "imageSteps": 100,
+      "videoQuality": "highest",
+      "parallelProcessing": false
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-10",
+    "description": "Workflow configuration for video generation pipeline"
+  }
+}

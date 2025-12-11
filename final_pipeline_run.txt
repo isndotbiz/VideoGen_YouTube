@@ -1,0 +1,68 @@
+2025-12-10 10:53:49,747 - 
+======================================================================
+2025-12-10 10:53:49,747 - VIDEO GENERATION PIPELINE - PARALLEL EXECUTION
+2025-12-10 10:53:49,747 - ======================================================================
+2025-12-10 10:53:49,747 - [INIT] Created output directories
+2025-12-10 10:53:49,747 - [INIT] Verifying setup...
+2025-12-10 10:53:49,747 - [SETUP] FAL.ai API Key: OK
+2025-12-10 10:53:49,747 - [SETUP] ElevenLabs API Key: OK
+2025-12-10 10:53:49,747 - [SETUP] Shotstack API Key: OK
+2025-12-10 10:53:49,747 - [SETUP] ComfyUI Server URL: OK
+2025-12-10 10:53:49,747 - [SETUP] Found: prompts.json
+2025-12-10 10:53:49,747 - [SETUP] Found: VIDEO_SCRIPTS_ALL_VARIATIONS.md
+2025-12-10 10:53:49,747 - [SETUP] Found: comfyui_batch_generator.py
+2025-12-10 10:53:49,747 - 
+======================================================================
+2025-12-10 10:53:49,747 - [PHASE 1] IMAGE GENERATION
+2025-12-10 10:53:49,747 - ======================================================================
+2025-12-10 10:53:49,747 - [PHASE 1] Attempting ComfyUI batch generation from http://localhost:8188...
+2025-12-10 10:54:35,070 - [PHASE 1] ComfyUI failed: 2025-12-10 10:53:49,946 - INFO - Loaded 21 prompts from prompts.json
+2025-12-10 10:53:51,976 - INFO - \u2713 ComfyUI server running at http://localhost:8188
+2025-12-10 10:53:51,976 - INFO - 
+[1/21] Ne
+2025-12-10 10:54:35,070 - [PHASE 1] Would attempt FAL.ai fallback (requires API calls)
+2025-12-10 10:54:35,070 - 
+======================================================================
+2025-12-10 10:54:35,070 - [PHASE 2] NARRATION GENERATION
+2025-12-10 10:54:35,070 - ======================================================================
+2025-12-10 10:54:35,070 - [PHASE 2] Generating narration via ElevenLabs API...
+2025-12-10 10:54:35,070 - [PHASE 2] Script text: 2000 characters
+2025-12-10 10:54:36,032 - [PHASE 2] Narration generation failed
+2025-12-10 10:54:36,032 - [PHASE 2] Error: Traceback (most recent call last):
+  File "<string>", line 68, in <module>
+AttributeError: 'ElevenLabs' object has no attribute 'generate'
+
+2025-12-10 10:54:36,032 - [PHASE 2] Creating placeholder audio for testing...
+2025-12-10 10:54:36,034 - 
+======================================================================
+2025-12-10 10:54:36,034 - [PHASE 3] VIDEO ASSEMBLY
+2025-12-10 10:54:36,034 - ======================================================================
+2025-12-10 10:54:36,034 - [PHASE 3] Assembling video via Shotstack API...
+2025-12-10 10:54:36,034 - [PHASE 3] Found 0 images and narration file
+2025-12-10 10:54:36,034 - [PHASE 3] Shotstack assembly would run here (interactive render required)
+2025-12-10 10:54:36,034 - [PHASE 3] Render typically takes 1-2 minutes per minute of video
+2025-12-10 10:54:36,034 - 
+======================================================================
+2025-12-10 10:54:36,036 - [PHASE 4] YOUTUBE UPLOAD
+2025-12-10 10:54:36,036 - ======================================================================
+2025-12-10 10:54:36,036 - [PHASE 4] YouTube upload requires OAuth browser authentication
+2025-12-10 10:54:36,036 - [PHASE 4] First upload will prompt for authorization
+2025-12-10 10:54:36,036 - [PHASE 4] Command: python video_pipeline.py --phase upload --video output/video.mp4
+2025-12-10 10:54:36,036 - 
+======================================================================
+2025-12-10 10:54:36,036 - PIPELINE EXECUTION SUMMARY
+2025-12-10 10:54:36,036 - ======================================================================
+2025-12-10 10:54:36,036 - Generated images: 0
+2025-12-10 10:54:36,036 - Generated narration: YES
+2025-12-10 10:54:36,036 - Output directory: D:\workspace\True_Nas\firecrawl-mdjsonl\output
+2025-12-10 10:54:36,036 - Log file: D:\workspace\True_Nas\firecrawl-mdjsonl\video_pipeline.log
+2025-12-10 10:54:36,036 - ======================================================================
+2025-12-10 10:54:36,036 - 
+Next steps:
+2025-12-10 10:54:36,036 - 1. For images: Launch ComfyUI locally (http://localhost:8188)
+2025-12-10 10:54:36,036 - 2. For narration: ElevenLabs API key verified
+2025-12-10 10:54:36,036 - 3. For assembly: Shotstack API key verified
+2025-12-10 10:54:36,036 - 4. For upload: YouTube OAuth setup required
+2025-12-10 10:54:36,036 - 
+Execution time: 46.3 seconds (0.8 minutes)
+2025-12-10 10:54:36,036 - Phases completed: 2/4

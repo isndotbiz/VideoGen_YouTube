@@ -1,0 +1,132 @@
+═══════════════════════════════════════════════════════════════════════════════
+  RUNWAY VIDEO ANIMATION - QUICK START ($5 BUDGET)
+═══════════════════════════════════════════════════════════════════════════════
+
+YOUR CURRENT STATUS:
+────────────────────────────────────────────────────────────────────────────────
+
+✓ 56 AI Images Generated (output/generated_images/)
+✓ Professional Narration (6.4MB, 6.8 minutes)
+✓ 35 Video Loop Prompts Extracted (output/VIDEO_LOOP_PROMPTS_READABLE.md)
+✓ Runway API Key Configured (key_583c257d0f479da77756e05bb1a9585ef2b4a17a69cc3d7a5ba1302897ecd362e6660a4f720defc16cb0cfd09eb087d9141e705e8d330d49162b246dc723055f)
+
+15.75-MINUTE MAIN VIDEO:
+✓ Render ID: 2ff841c5-47d7-40d0-a513-18cdcb6102d4
+  Status: Rendering on Shotstack servers
+
+═══════════════════════════════════════════════════════════════════════════════
+  NEXT STEP: GENERATE 6 ANIMATED VIDEOS
+═══════════════════════════════════════════════════════════════════════════════
+
+BUDGET: $5.00 (approx 6 videos @ $0.80 each)
+
+1. Open: https://runwayml.com/dashboard
+
+2. Click: New Project → Gen-3 Motion
+
+3. For each of the 6 animations below:
+   a) Upload image from: D:\workspace\True_Nas\firecrawl-mdjsonl\output\generated_images\
+   b) Paste the motion prompt (provided in RUNWAY_MANUAL_GUIDE.md)
+   c) Click "Generate"
+   d) Wait 2-3 minutes
+   e) Download as MP4
+
+ANIMATIONS TO CREATE:
+────────────────────────────────────────────────────────────────────────────────
+
+1. IMAGE: Claude_Code_Showcase_006_image.png
+   SECTION: Claude Code Showcase
+   PURPOSE: Show interactive terminal with typing text
+   ESTIMATED COST: $0.80
+
+2. IMAGE: Claude_Code_Showcase_007_image.png
+   SECTION: Claude Code Showcase
+   PURPOSE: Golden thread weaving through code
+   ESTIMATED COST: $0.80
+
+3. IMAGE: Codex_Showcase_012_image.png
+   SECTION: Codex Showcase
+   PURPOSE: Parallel processing threads flowing left to right
+   ESTIMATED COST: $0.80
+
+4. IMAGE: Comparison_Visuals_018_image.png
+   SECTION: Comparison Visuals
+   PURPOSE: Feature table illuminating row by row
+   ESTIMATED COST: $0.80
+
+5. IMAGE: Use_Cases_024_image.png
+   SECTION: Use Cases
+   PURPOSE: Developer debugging with Claude explanations
+   ESTIMATED COST: $0.80
+
+6. IMAGE: Use_Cases_025_image.png
+   SECTION: Use Cases
+   PURPOSE: Files progressing through workflow stages
+   ESTIMATED COST: $0.80
+
+TOTAL ESTIMATED COST: $4.80
+BUDGET REMAINING: $0.20
+
+═══════════════════════════════════════════════════════════════════════════════
+  DETAILED MOTION PROMPTS
+═══════════════════════════════════════════════════════════════════════════════
+
+See file: RUNWAY_MANUAL_GUIDE.md
+
+Copy each prompt directly into Runway's text field.
+
+═══════════════════════════════════════════════════════════════════════════════
+  AFTER GENERATING VIDEOS
+═══════════════════════════════════════════════════════════════════════════════
+
+Option 1: CREATE HIGHLIGHTS REEL
+- Combine 6 videos into a 1-minute promo
+- Use for YouTube shorts, social media, previews
+
+Option 2: INTEGRATE INTO MAIN VIDEO
+- Replace static images in the 15.75-minute video
+- Re-submit to Shotstack with animated clips
+
+Option 3: BOTH
+- Create highlights from best 3 videos
+- Integrate remaining 3 into main video
+
+═══════════════════════════════════════════════════════════════════════════════
+  RUNWAY PRO TIPS
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Use "Gen-3 Motion" model (best quality)
+✓ Set duration to 5-10 seconds (builds good loops)
+✓ Use "High" quality (your budget allows it)
+✓ Download immediately when complete (videos auto-delete after 7 days)
+✓ Save with descriptive names: animation_01_threads.mp4, etc.
+✓ Save to: output/animated_loops/
+
+═══════════════════════════════════════════════════════════════════════════════
+  TIMELINE
+═══════════════════════════════════════════════════════════════════════════════
+
+Video Generation Time:
+- Per animation: 2-3 minutes
+- All 6 videos: ~15-20 minutes total
+- You can generate them in parallel
+
+Estimated Total Session Time:
+- 15-20 minutes to generate
+- 5-10 minutes to download and organize
+- 25-30 minutes total
+
+═══════════════════════════════════════════════════════════════════════════════
+  MONITORING MAIN VIDEO
+═══════════════════════════════════════════════════════════════════════════════
+
+Main video still rendering (15.75 minutes):
+- Render ID: 2ff841c5-47d7-40d0-a513-18cdcb6102d4
+- Expected completion: ~24 minutes from submission
+- Will auto-download to: output/claude_codex_video.mp4
+
+Check status: python render_status_check.py
+
+═══════════════════════════════════════════════════════════════════════════════
+
+READY TO START? Open https://runwayml.com/dashboard now!

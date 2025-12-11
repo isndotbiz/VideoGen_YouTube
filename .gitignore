@@ -1,0 +1,309 @@
+# ============================================
+# .gitignore - Security-First Configuration
+# ============================================
+# This file ensures secrets and sensitive data are NEVER committed to git
+#
+# SECURITY NOTICE:
+# - All files matching these patterns are ignored by git
+# - Review this file regularly to ensure it's comprehensive
+# - When in doubt, add it to .gitignore
+# ============================================
+
+# --------------------------------------------
+# CRITICAL: Environment Variables & Secrets
+# --------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+env.local
+.envrc
+
+# API Keys and Tokens
+*_token.json
+*_credentials.json
+*_secrets.json
+secrets.json
+api_keys.*
+*.key
+*.pem
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# OAuth and Authentication
+youtube_token.json
+google_credentials.json
+oauth2_token.json
+refresh_token.json
+
+# Encrypted secrets
+*.encrypted
+secrets.vault
+.secrets/
+
+# --------------------------------------------
+# Python
+# --------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --------------------------------------------
+# Node.js & JavaScript
+# --------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# Package Managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --------------------------------------------
+# Output Files & Generated Content
+# --------------------------------------------
+output/
+outputs/
+temp/
+tmp/
+cache/
+.cache/
+*.tmp
+*.temp
+
+# Video Files (large, shouldn't be in git)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+*.webm
+*.m4v
+
+# Audio Files
+*.mp3
+*.wav
+*.aac
+*.ogg
+*.flac
+*.m4a
+
+# Image Files (generated)
+output/**/*.png
+output/**/*.jpg
+output/**/*.jpeg
+output/**/*.gif
+output/**/*.webp
+temp/**/*.png
+temp/**/*.jpg
+
+# Allow example images in assets
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.jpeg
+
+# --------------------------------------------
+# Logs & Debugging
+# --------------------------------------------
+logs/
+*.log
+log.txt
+error.log
+debug.log
+*.log.*
+
+# Debug files
+.debug/
+*.stackdump
+core
+
+# --------------------------------------------
+# IDEs & Editors
+# --------------------------------------------
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# --------------------------------------------
+# OS Generated Files
+# --------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# --------------------------------------------
+# Database Files
+# --------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+database.db
+local.db
+
+# --------------------------------------------
+# Backup Files
+# --------------------------------------------
+*.bak
+*.backup
+*.old
+*~
+*.orig
+.backup/
+backups/
+
+# --------------------------------------------
+# Compression & Archives
+# --------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.dmg
+*.iso
+
+# --------------------------------------------
+# Testing & Coverage
+# --------------------------------------------
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+.hypothesis/
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+
+# --------------------------------------------
+# Documentation Build
+# --------------------------------------------
+docs/_build/
+site/
+.mkdocs/
+
+# --------------------------------------------
+# Cloud & Deployment
+# --------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.backup
+.serverless/
+.now/
+.vercel/
+
+# --------------------------------------------
+# Project Specific
+# --------------------------------------------
+# Firecrawl scraped data (if sensitive)
+# scraped_data/
+# dataset_sensitive.jsonl
+
+# Model files (too large for git)
+models/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# User-specific config overrides
+config.local.json
+settings.local.json
+
+# --------------------------------------------
+# Keep These Files (Examples & Templates)
+# --------------------------------------------
+!.env.example
+!config.json
+!workflow_config.json
+!prompts.json
+!.gitignore
+!.gitattributes
+!README.md
+!LICENSE

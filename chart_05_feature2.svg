@@ -1,0 +1,6 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#F9FAFB"/>
+  <rect x="300" y="300" width="1320" height="500" rx="20" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="3"/>
+  <text x="960" y="700" font-size="100" font-weight="bold" text-anchor="middle" fill="#F97316" font-family="Arial">Reviews Meticulously</text>
+  <text x="960" y="850" font-size="60" text-anchor="middle" fill="#666" font-family="Arial">Finds issues and ensures quality</text>
+</svg>

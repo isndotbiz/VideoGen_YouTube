@@ -1,0 +1,166 @@
+{
+  "video": {
+    "resolution": {
+      "width": 1920,
+      "height": 1080,
+      "preset": "1080p",
+      "options": ["720p", "1080p", "4k"]
+    },
+    "framerate": 30,
+    "duration": {
+      "default": 60,
+      "min": 15,
+      "max": 300,
+      "unit": "seconds"
+    },
+    "format": {
+      "output": "mp4",
+      "codec": "h264",
+      "quality": "high",
+      "bitrate": "8M"
+    },
+    "audio": {
+      "enabled": true,
+      "codec": "aac",
+      "bitrate": "192k",
+      "sampleRate": 44100,
+      "channels": 2
+    }
+  },
+  "rendering": {
+    "transitions": {
+      "enabled": true,
+      "defaultType": "fade",
+      "duration": 0.5,
+      "types": ["fade", "wipe", "slide", "zoom"]
+    },
+    "effects": {
+      "kenBurns": {
+        "enabled": true,
+        "zoomScale": 1.2,
+        "duration": 5
+      },
+      "colorGrading": {
+        "enabled": false,
+        "preset": "cinematic"
+      },
+      "watermark": {
+        "enabled": false,
+        "position": "bottom-right",
+        "opacity": 0.7,
+        "file": "./assets/watermark.png"
+      }
+    },
+    "text": {
+      "font": "Arial",
+      "fontSize": 48,
+      "color": "#FFFFFF",
+      "backgroundColor": "rgba(0,0,0,0.5)",
+      "position": "center",
+      "animation": "fadeIn"
+    }
+  },
+  "api": {
+    "retries": {
+      "maxAttempts": 3,
+      "backoffMultiplier": 2,
+      "initialDelay": 1000
+    },
+    "timeout": {
+      "default": 30000,
+      "upload": 120000,
+      "render": 300000,
+      "unit": "milliseconds"
+    },
+    "rateLimit": {
+      "enabled": true,
+      "requestsPerMinute": 60,
+      "burstAllowance": 10
+    }
+  },
+  "storage": {
+    "paths": {
+      "output": "./output",
+      "temp": "./temp",
+      "cache": "./cache",
+      "logs": "./logs",
+      "assets": "./assets"
+    },
+    "cleanup": {
+      "enabled": true,
+      "retentionDays": 7,
+      "cleanupTemp": true,
+      "cleanupCache": true
+    },
+    "cache": {
+      "enabled": true,
+      "ttl": 3600,
+      "maxSize": "1GB"
+    }
+  },
+  "processing": {
+    "parallel": {
+      "enabled": true,
+      "maxConcurrent": 3,
+      "queueSize": 10
+    },
+    "optimization": {
+      "imageCompression": true,
+      "videoCompression": true,
+      "compressionQuality": 85
+    },
+    "validation": {
+      "checkDimensions": true,
+      "checkDuration": true,
+      "checkFileSize": true,
+      "maxFileSizeMB": 500
+    }
+  },
+  "features": {
+    "autoSubtitles": {
+      "enabled": false,
+      "language": "en",
+      "style": "default"
+    },
+    "autoChapters": {
+      "enabled": false,
+      "minDuration": 120
+    },
+    "thumbnailGeneration": {
+      "enabled": true,
+      "count": 3,
+      "width": 1920,
+      "height": 1080
+    },
+    "analytics": {
+      "enabled": false,
+      "trackRenderTime": true,
+      "trackApiCalls": true
+    }
+  },
+  "environments": {
+    "development": {
+      "debug": true,
+      "verbose": true,
+      "mockApiCalls": false,
+      "skipRendering": false
+    },
+    "staging": {
+      "debug": false,
+      "verbose": true,
+      "mockApiCalls": false,
+      "skipRendering": false
+    },
+    "production": {
+      "debug": false,
+      "verbose": false,
+      "mockApiCalls": false,
+      "skipRendering": false
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-10",
+    "description": "Video generation pipeline configuration"
+  }
+}

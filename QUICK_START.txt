@@ -1,0 +1,121 @@
+QUICK START: VIDEO GENERATION PIPELINE
+
+Status: All APIs configured and ready. ComfyUI needs to be started.
+
+================================================================================
+1-MINUTE SETUP
+================================================================================
+
+Verify Everything is Ready:
+  python run_video_pipeline.py
+
+That's it! The system will:
+  1. Check all API keys
+  2. Try to generate images via ComfyUI
+  3. Generate narration via ElevenLabs
+  4. Assemble video via Shotstack
+  5. Ready for YouTube upload
+
+================================================================================
+WHAT HAPPENS
+================================================================================
+
+PHASE 1 - IMAGE GENERATION (21 minutes)
+  - Generates 21 PNG images at 1920x1080
+  - Uses ComfyUI + Flux Turbo locally
+  - Cost: FREE (or $0.03 with FAL.ai fallback)
+
+PHASE 2 - NARRATION (30 seconds)
+  - Generates MP3 via ElevenLabs TTS
+  - Rachel voice, professional quality
+  - Cost: $0.02
+
+PHASE 3 - ASSEMBLY (30-40 minutes)
+  - Waits for phases 1 & 2 to complete
+  - Assembles video via Shotstack API
+  - Creates final 17-minute MP4
+  - Cost: $3.40
+
+PHASE 4 - YOUTUBE UPLOAD (5 minutes)
+  - Uploads final video to YouTube
+  - Requires OAuth first time
+  - Cost: FREE
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+output/
+  generated_images/          21 PNG files (1920x1080)
+  narration.mp3              2000-word TTS audio
+  video_final.mp4            17-minute final video
+
+logs/
+  video_pipeline.log         Full execution log
+
+================================================================================
+TOTAL COST
+================================================================================
+
+Images:    $0.00 (local ComfyUI) or $0.03 (FAL.ai)
+Narration: $0.02 (ElevenLabs)
+Assembly:  $3.40 (Shotstack)
+Upload:    FREE (YouTube)
+---------
+TOTAL:     $3.45 (or $0 with local ComfyUI)
+
+================================================================================
+TIMELINE
+================================================================================
+
+Total time: ~55 minutes (mostly automated waiting)
+
+ComfyUI running?
+  YES → Images (21 min) + Narration (30 sec parallel) + Assembly (30 min) + Upload (5 min)
+  NO  → Skip images, go to narration and beyond
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+"ComfyUI not reachable"
+  Solution: Start ComfyUI in another terminal
+    cd ComfyUI
+    python main.py --port 8188
+
+"Missing API keys"
+  Solution: Check .env file
+    cat .env | grep API_KEY
+
+"Generation failed"
+  Solution: Check log file
+    tail -50 logs/video_pipeline.log
+
+"Connection timeout"
+  Solution: Services may be slow
+    - Wait 5 minutes, retry
+    - Check your internet connection
+    - Verify firewall isn't blocking ports
+
+================================================================================
+SUPPORT
+================================================================================
+
+Full Details:     PIPELINE_EXECUTION_REPORT.md
+API Reference:    API_REFERENCE_GUIDE.md
+Troubleshooting:  See logs/video_pipeline.log
+Contact:          Check project documentation
+
+================================================================================
+TO START NOW
+================================================================================
+
+Run: python run_video_pipeline.py
+
+Status will be printed to console and saved to:
+  logs/video_pipeline.log
+
+Output files will be in:
+  output/
+
+That's all!

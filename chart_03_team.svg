@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#F9FAFB"/>
+  <!-- Left circle -->
+  <circle cx="600" cy="540" r="150" fill="#3B82F6"/>
+  <text x="600" y="560" font-size="40" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Claude</text>
+  <!-- Right circle -->
+  <circle cx="1320" cy="540" r="150" fill="#F97316"/>
+  <text x="1320" y="560" font-size="40" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Codex</text>
+  <!-- Connecting line -->
+  <line x1="750" y1="540" x2="1170" y2="540" stroke="#10B981" stroke-width="8"/>
+  <!-- Center symbol -->
+  <circle cx="960" cy="540" r="60" fill="white" stroke="#10B981" stroke-width="4"/>
+  <text x="960" y="570" font-size="80" font-weight="bold" text-anchor="middle" fill="#10B981" font-family="Arial">=</text>
+  <!-- Top text -->
+  <text x="960" y="150" font-size="80" font-weight="bold" text-anchor="middle" fill="#000" font-family="Arial">Perfect Team</text>
+</svg>

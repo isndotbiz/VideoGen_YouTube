@@ -1,0 +1,67 @@
+{
+  "comfyui": {
+    "host": "127.0.0.1",
+    "port": 8188,
+    "workflow_path": "workflows/flux_turbo.json",
+    "output_dir": "outputs/images",
+    "timeout": 300,
+    "max_retries": 3
+  },
+  "elevenlabs": {
+    "model": "eleven_turbo_v2",
+    "voice_id": "21m00Tcm4TlvDq8ikWAM",
+    "output_dir": "outputs/audio",
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "fal": {
+    "model": "fal-ai/flux/schnell",
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "num_inference_steps": 4,
+    "output_dir": "outputs/images/fal_fallback"
+  },
+  "shotstack": {
+    "stage": "v1",
+    "output_dir": "outputs/videos",
+    "poll_interval": 5,
+    "max_poll_time": 600,
+    "default_fps": 30,
+    "resolution": "1080",
+    "format": "mp4"
+  },
+  "youtube": {
+    "credentials_path": "credentials/youtube_credentials.json",
+    "token_path": "credentials/youtube_token.json",
+    "scopes": [
+      "https://www.googleapis.com/auth/youtube.upload",
+      "https://www.googleapis.com/auth/youtube"
+    ],
+    "default_privacy": "private",
+    "default_category": "22"
+  },
+  "pipeline": {
+    "checkpoint_dir": "checkpoints",
+    "enable_checkpoints": true,
+    "parallel_image_generation": true,
+    "max_concurrent_images": 3,
+    "dry_run": false,
+    "verbose": true
+  },
+  "retry": {
+    "max_attempts": 3,
+    "initial_delay": 1,
+    "max_delay": 60,
+    "exponential_base": 2
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "logs/video_pipeline.log",
+    "console": true
+  }
+}

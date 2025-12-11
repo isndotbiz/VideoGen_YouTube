@@ -1,0 +1,151 @@
+{
+  "prompts": [
+    {
+      "id": 1,
+      "section": "Network Infrastructure",
+      "name": "Network Topology Overview",
+      "prompt": "A professional network diagram showing interconnected servers and routers, clean minimalist design, blue and white color scheme, isometric view, technical illustration style, 8k resolution, sharp details",
+      "seed": 42
+    },
+    {
+      "id": 2,
+      "section": "Network Infrastructure",
+      "name": "WireGuard VPN Tunnel",
+      "prompt": "A cinematic visualization of encrypted VPN tunnel with glowing data packets flowing through a secure tunnel, dark background with blue and green accent lighting, cybersecurity aesthetic, high tech visualization, 8k resolution",
+      "seed": 43
+    },
+    {
+      "id": 3,
+      "section": "Network Infrastructure",
+      "name": "Firewall Protection",
+      "prompt": "A dramatic visualization of a digital firewall protecting a server, shield-like barrier with flowing data streams, blue and orange glow effects, cyberpunk aesthetic, cinematic lighting, high detail, 8k resolution",
+      "seed": 44
+    },
+    {
+      "id": 4,
+      "section": "Storage Systems",
+      "name": "ZFS Storage Pool",
+      "prompt": "A professional 3D visualization of ZFS storage pool architecture, multiple drives arranged in RAID configuration, clean tech aesthetic, blue holographic interfaces, floating data visualizations, 8k resolution, cinematic composition",
+      "seed": 45
+    },
+    {
+      "id": 5,
+      "section": "Storage Systems",
+      "name": "Data Center Server Racks",
+      "prompt": "A professional photograph of modern data center with server racks, LED status lights, clean cable management, dramatic blue lighting, high detail, sharp focus, cinematic composition, 8k resolution",
+      "seed": 46
+    },
+    {
+      "id": 6,
+      "section": "Storage Systems",
+      "name": "NAS Device Close-up",
+      "prompt": "A detailed product photography shot of a TrueNAS storage device, sleek modern design, LED indicators glowing, black background with dramatic side lighting, commercial product photo style, 8k resolution, ultra sharp",
+      "seed": 47
+    },
+    {
+      "id": 7,
+      "section": "Backup Systems",
+      "name": "Automated Backup Process",
+      "prompt": "A technical visualization of automated backup process, data flowing from computer to NAS device, blue streams of binary code, holographic UI elements, dark background, professional tech illustration, 8k resolution",
+      "seed": 48
+    },
+    {
+      "id": 8,
+      "section": "Backup Systems",
+      "name": "Cloud Sync Operation",
+      "prompt": "A cinematic visualization of cloud synchronization, data flowing from local server to cloud storage, blue and white color scheme, modern tech aesthetic, floating cloud icons, dramatic lighting, 8k resolution",
+      "seed": 49
+    },
+    {
+      "id": 9,
+      "section": "Backup Systems",
+      "name": "Veeam Backup Dashboard",
+      "prompt": "A professional screenshot of a modern backup monitoring dashboard, clean UI design, graphs and status indicators, green checkmarks showing successful backups, dark theme interface, high detail, 8k resolution",
+      "seed": 50
+    },
+    {
+      "id": 10,
+      "section": "Virtualization",
+      "name": "VM Infrastructure Overview",
+      "prompt": "A technical diagram showing virtual machine infrastructure, multiple VMs running on hypervisor, clean isometric illustration, blue and gray color scheme, professional tech documentation style, 8k resolution",
+      "seed": 51
+    },
+    {
+      "id": 11,
+      "section": "Virtualization",
+      "name": "Docker Container Stack",
+      "prompt": "A modern visualization of Docker container architecture, stacked containers with connecting lines, whale logo elements, blue accent colors, clean tech illustration style, dark background, 8k resolution",
+      "seed": 52
+    },
+    {
+      "id": 12,
+      "section": "Monitoring & Management",
+      "name": "System Monitoring Dashboard",
+      "prompt": "A professional monitoring dashboard with real-time graphs and metrics, CPU and memory usage displays, network traffic visualization, modern dark theme UI, clean design, high detail, 8k resolution",
+      "seed": 53
+    },
+    {
+      "id": 13,
+      "section": "Monitoring & Management",
+      "name": "Alert Notification System",
+      "prompt": "A cinematic visualization of alert notification system, glowing notification icons, warning indicators with amber lighting, modern UI elements, dark background, professional tech aesthetic, 8k resolution",
+      "seed": 54
+    },
+    {
+      "id": 14,
+      "section": "Media Server",
+      "name": "Jellyfin Media Library",
+      "prompt": "A beautiful visualization of a media library interface, movie posters in grid layout, modern streaming UI design, dark theme with colorful poster artwork, professional interface design, 8k resolution, sharp details",
+      "seed": 55
+    },
+    {
+      "id": 15,
+      "section": "Media Server",
+      "name": "GPU Transcoding Process",
+      "prompt": "A technical visualization of GPU accelerated video transcoding, graphics card with glowing circuits processing video streams, blue and green lighting effects, high tech aesthetic, 8k resolution, dramatic composition",
+      "seed": 56
+    },
+    {
+      "id": 16,
+      "section": "AI Infrastructure",
+      "name": "AI Model Server",
+      "prompt": "A futuristic visualization of AI model inference server, neural network visualizations floating around server hardware, purple and blue holographic effects, cyberpunk aesthetic, cinematic lighting, 8k resolution",
+      "seed": 57
+    },
+    {
+      "id": 17,
+      "section": "AI Infrastructure",
+      "name": "LLaMA Model Loading",
+      "prompt": "A technical visualization of large language model loading into GPU memory, data streams flowing into graphics card, holographic UI showing loading progress, modern tech aesthetic, blue accent lighting, 8k resolution",
+      "seed": 58
+    },
+    {
+      "id": 18,
+      "section": "Security",
+      "name": "Security Audit Dashboard",
+      "prompt": "A professional security monitoring interface, threat detection visualizations, green status indicators, dark theme UI with red accent for warnings, clean modern design, high detail, 8k resolution",
+      "seed": 59
+    },
+    {
+      "id": 19,
+      "section": "Security",
+      "name": "Encrypted Data Flow",
+      "prompt": "A cinematic visualization of encrypted data transmission, glowing encrypted packets with lock icons, secure tunnel visualization, blue and green lighting, cybersecurity aesthetic, dramatic composition, 8k resolution",
+      "seed": 60
+    },
+    {
+      "id": 20,
+      "section": "Remote Access",
+      "name": "Remote Connection Setup",
+      "prompt": "A modern visualization of remote desktop connection, multiple device screens showing synchronized content, clean tech aesthetic, blue holographic connection lines, professional illustration style, 8k resolution",
+      "seed": 61
+    },
+    {
+      "id": 21,
+      "section": "Infrastructure Overview",
+      "name": "Complete System Architecture",
+      "prompt": "A comprehensive technical diagram of complete IT infrastructure, multiple servers interconnected with network lines, storage arrays, backup systems, and security layers, isometric view, professional documentation style, blue and gray color palette, 8k resolution, ultra detailed",
+      "seed": 62
+    }
+  ]
+}

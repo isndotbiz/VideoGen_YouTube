@@ -1,0 +1,18 @@
+2025-12-10 10:52:18,872 - INFO - ======================================================================
+2025-12-10 10:52:18,872 - INFO - PIPELINE EXECUTION STARTED
+2025-12-10 10:52:18,872 - INFO - ======================================================================
+2025-12-10 10:52:18,872 - INFO - [INIT] All required environment variables found
+C:\Users\Jdmal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2025-12-10 10:52:20,555 - INFO - [INIT] All required packages installed
+2025-12-10 10:52:22,609 - INFO - [RESOURCES] ComfyUI: UNREACHABLE
+2025-12-10 10:52:22,609 - INFO - [RESOURCES] Input files: OK
+2025-12-10 10:52:22,609 - INFO - 
+[ORCHESTRATION] Launching Phase 1 (Images) and Phase 2 (Narration) in parallel...
+2025-12-10 10:52:22,609 - INFO - [PHASE 1] Starting image generation via ComfyUI...
+2025-12-10 10:52:22,620 - INFO - [PHASE 2] Starting narration generation via ElevenLabs...
+2025-12-10 10:52:23,358 - INFO - [PHASE 2] Narration generation [FAILED]
+2025-12-10 10:52:24,903 - INFO - [PHASE 1] Image generation [FAILED]
+2025-12-10 10:52:24,903 - INFO - 
+[ORCHESTRATION] Launching Phase 3 (Assembly)...
+2025-12-10 10:52:24,903 - WARNING - [PHASE 3] Waiting for images and narration to complete...

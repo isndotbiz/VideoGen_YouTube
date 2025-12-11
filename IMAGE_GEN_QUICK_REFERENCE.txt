@@ -1,0 +1,257 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    ENHANCED FAL BATCH GENERATOR                              ║
+║                         Quick Reference Card                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SETUP (One-time)                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. Install dependencies:
+   pip install fal-client python-dotenv requests tqdm
+
+2. Configure .env file:
+   FAL_API_KEY=your_api_key_here
+
+3. Test setup:
+   python test_fal_setup.py
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ BASIC COMMANDS                                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Preview without generating
+python enhanced_fal_batch_generator.py --prompts prompts.json --dry-run
+
+# Generate with defaults (4 workers)
+python enhanced_fal_batch_generator.py --prompts prompts.json
+
+# Generate with custom settings
+python enhanced_fal_batch_generator.py \
+  --prompts prompts.json \
+  --output ./my_images \
+  --workers 4 \
+  --max-retries 3
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ COMMAND OPTIONS                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+--prompts FILE         JSON file with prompts (default: prompts.json)
+--output DIR           Output directory (default: ./output/generated_images)
+--workers N            Parallel workers, 3-4 recommended (default: 4)
+--max-retries N        Max retry attempts (default: 3)
+--timeout N            Request timeout in seconds (default: 120)
+--dry-run              Preview without generating
+--help                 Show help message
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PROMPTS JSON FORMAT                                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+{
+  "prompts": [
+    {
+      "section": "Category Name",
+      "image_number": 1,
+      "image_prompt": "Detailed prompt for AI",
+      "description": "Brief filename description"
+    }
+  ]
+}
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ COMMON SCENARIOS                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Fast generation (good network)
+python enhanced_fal_batch_generator.py --prompts prompts.json --workers 6
+
+# Slow/unstable network
+python enhanced_fal_batch_generator.py --prompts prompts.json --workers 2 \
+  --max-retries 5 --timeout 300
+
+# Resume failed batch (auto-skips existing)
+python enhanced_fal_batch_generator.py --prompts prompts.json
+
+# Custom output location
+python enhanced_fal_batch_generator.py --prompts prompts.json \
+  --output ~/Desktop/my_images
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ OUTPUT STRUCTURE                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+output/generated_images/
+├── Section_001_Description.png           # Generated images
+├── Section_002_Description.png
+├── batch_metadata.json                   # Batch summary
+└── metadata/
+    ├── Section_001_Description.png.json  # Individual metadata
+    └── Section_002_Description.png.json
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ MONITORING                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Watch logs in real-time
+tail -f batch_generation.log
+
+# Check errors
+grep ERROR batch_generation.log
+
+# Count generated images
+ls output/generated_images/*.png | wc -l
+
+# View batch summary
+cat output/generated_images/batch_metadata.json | python -m json.tool
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PERFORMANCE METRICS                                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Sequential:         ~1 image per 10-15 seconds
+Parallel (4):       ~3-4 images per 15 seconds
+30 image batch:     ~5-8 minutes
+100 image batch:    ~20-25 minutes
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ COSTS (FAL.ai Flux Dev)                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Per image:          ~$0.03
+10 images:          ~$0.30
+30 images:          ~$0.90
+100 images:         ~$3.00
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ TROUBLESHOOTING                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+ERROR: API key not found
+FIX:   Check .env file has: FAL_API_KEY=your_key
+
+ERROR: Module not found
+FIX:   pip install fal-client python-dotenv requests tqdm
+
+ERROR: Timeout
+FIX:   Increase timeout: --timeout 300
+
+ERROR: High failure rate
+FIX:   Reduce workers: --workers 2
+
+ERROR: Permission denied
+FIX:   Check output directory permissions
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ QUALITY SETTINGS (Edit Script)                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+High Quality (slower):
+  "num_inference_steps": 75
+  "guidance_scale": 9.0
+
+Balanced (default):
+  "num_inference_steps": 50
+  "guidance_scale": 7.5
+
+Fast (lower quality):
+  "num_inference_steps": 30
+  "guidance_scale": 5.0
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PROMPT ENGINEERING TIPS                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Good prompts include:
+✓ Subject/scene description
+✓ Style (photorealistic, illustration, 3D)
+✓ Lighting and atmosphere
+✓ Camera angle/perspective
+✓ Quality keywords (8k, high detail, sharp)
+
+Example:
+"A professional data center with server racks, blue LED lighting,
+wide angle shot, modern architecture, cinematic composition,
+8k resolution, high detail"
+
+Avoid:
+✗ Too short (< 10 words)
+✗ Vague descriptions
+✗ Missing style/quality keywords
+✗ Contradictory elements
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ WORKFLOW CHECKLIST                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+[ ] 1. Setup: pip install + configure .env
+[ ] 2. Validate: python test_fal_setup.py
+[ ] 3. Preview: --dry-run to check cost/output
+[ ] 4. Test: Generate 3-5 images first
+[ ] 5. Review: Check quality and adjust if needed
+[ ] 6. Generate: Run full batch
+[ ] 7. Verify: Check batch_metadata.json
+[ ] 8. Backup: Copy images to permanent storage
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ USEFUL PYTHON SNIPPETS                                                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Check progress
+python -c "
+import json
+from glob import glob
+total = len(json.load(open('prompts.json'))['prompts'])
+done = len(glob('output/generated_images/*.png'))
+print(f'{done}/{total} ({done/total*100:.1f}%)')
+"
+
+# List failed images
+python -c "
+import json
+with open('output/generated_images/batch_metadata.json') as f:
+    data = json.load(f)
+    for img in data['images']:
+        if not img['success']:
+            print(f\"{img['output_filename']}: {img['error_message']}\")
+"
+
+# Calculate actual cost
+python -c "
+import json
+with open('output/generated_images/batch_metadata.json') as f:
+    data = json.load(f)
+    print(f'Cost: \${data[\"successful\"] * 0.03:.2f}')
+"
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ DOCUMENTATION FILES                                                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+IMAGE_GENERATION_SUMMARY.md          - Complete overview
+ENHANCED_FAL_GENERATOR_README.md     - Technical documentation
+QUICK_START_IMAGE_GENERATION.md      - 5-minute setup guide
+BATCH_GENERATOR_EXAMPLES.md          - Real-world examples
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ RESOURCES                                                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+FAL.ai Dashboard:     https://fal.ai/dashboard
+Get API Key:          https://fal.ai/dashboard/keys
+API Documentation:    https://fal.ai/models/fal-ai/flux/dev
+Pricing:              https://fal.ai/pricing
+Status:               https://status.fal.ai
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ QUICK START (3 steps)                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. pip install fal-client python-dotenv requests tqdm
+2. python test_fal_setup.py
+3. python enhanced_fal_batch_generator.py --prompts sample_image_prompts.json
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         Ready to Generate!                                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝

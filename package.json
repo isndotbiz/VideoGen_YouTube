@@ -1,0 +1,23 @@
+{
+  "name": "firecrawl-to-video-pipeline",
+  "version": "1.0.0",
+  "description": "Complete pipeline: Firecrawl scrape → JSONL conversion → Video script generation",
+  "main": "orchestrate.js",
+  "type": "commonjs",
+  "scripts": {
+    "scrape": "node scrape-and-convert.js",
+    "video-script": "node generate-video-script.js",
+    "clean": "node clean-jsonl.js",
+    "full-pipeline": "node orchestrate.js"
+  },
+  "keywords": [
+    "firecrawl",
+    "jsonl",
+    "video-generation",
+    "web-scraping"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

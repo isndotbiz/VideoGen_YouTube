@@ -1,0 +1,77 @@
+================================================================================
+                      YOUTUBE UPLOAD - QUICK START
+================================================================================
+
+READY TO UPLOAD? RUN THIS COMMAND:
+
+    python upload_to_youtube.py --video output/claude_codex_video.mp4
+
+--------------------------------------------------------------------------------
+
+ALTERNATIVE COMMANDS:
+
+Public Upload (Default):
+    python upload_to_youtube.py --video output/claude_codex_video.mp4
+
+Unlisted Upload (Only people with link can watch):
+    python upload_to_youtube.py --video output/claude_codex_video.mp4 --privacy unlisted
+
+Private Upload (Only you can watch):
+    python upload_to_youtube.py --video output/claude_codex_video.mp4 --privacy private
+
+Custom Title:
+    python upload_to_youtube.py --video output/claude_codex_video.mp4 \
+        --title "Your Custom Title Here"
+
+--------------------------------------------------------------------------------
+
+AVAILABLE VIDEO FILES:
+
+1. output/claude_codex_video.mp4 (259 MB) - Recommended
+2. output/video_final.mp4 (4.5 MB)
+
+--------------------------------------------------------------------------------
+
+WHAT'S CONFIGURED:
+
+✓ YouTube Credentials (youtube_credentials.json)
+✓ OAuth Token Cache (youtube_token.pickle)
+✓ Client ID and Secret (in .env)
+✓ Python Packages (google-auth, google-api-python-client)
+✓ Upload Script (upload_to_youtube.py)
+
+--------------------------------------------------------------------------------
+
+DEFAULT UPLOAD SETTINGS:
+
+Title: "Claude vs Codex: AI Assistant Comparison"
+Privacy: Public
+Category: Science & Technology (28)
+Tags: Claude, Codex, AI Assistant, OpenAI, Anthropic, etc.
+
+--------------------------------------------------------------------------------
+
+AFTER UPLOAD:
+
+You'll receive:
+- YouTube URL (https://youtu.be/ABC123)
+- Video ID
+- YouTube Studio link
+
+Upload info saved to: youtube_upload_info.json
+
+--------------------------------------------------------------------------------
+
+NEED HELP?
+
+View all options:
+    python upload_to_youtube.py --help
+
+Test authentication:
+    python test_youtube_auth.py
+
+Full documentation:
+    YOUTUBE_UPLOAD_GUIDE.md
+    YOUTUBE_UPLOAD_READY.md
+
+================================================================================
