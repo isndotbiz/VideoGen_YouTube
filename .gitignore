@@ -34,6 +34,7 @@ api_keys.*
 
 # OAuth and Authentication
 youtube_token.json
+youtube_token.pickle
 google_credentials.json
 oauth2_token.json
 refresh_token.json
@@ -279,6 +280,9 @@ site/
 # --------------------------------------------
 # Project Specific
 # --------------------------------------------
+# Documentation with example credentials
+YOUTUBE_UPLOAD_GUIDE.md
+
 # Firecrawl scraped data (if sensitive)
 # scraped_data/
 # dataset_sensitive.jsonl
