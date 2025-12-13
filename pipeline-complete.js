@@ -20,6 +20,7 @@ const ResearchEngine = require('./lib/research-engine');
 const ImagePromptGenerator = require('./lib/image-prompt-generator');
 const FFmpegAssembler = require('./lib/ffmpeg-assembler');
 const DescriptVideoEditor = require('./descript-video-editor');
+const ShotstackAssembler = require('./lib/shotstack-assembler');
 
 const logger = new Logger('./logs');
 const costTracker = new CostTracker(10.0, logger);
@@ -292,11 +293,74 @@ async function phase7AssembleDescript() {
 }
 
 /**
- * Phase 7: Assemble video (choose FFmpeg or Descript)
+ * Phase 7C: Assemble video with Shotstack (CLOUD, FAST, CHEAP)
  */
-async function phase7Assemble(useDescript = false) {
-  if (useDescript) {
+async function phase7AssembleShotstack() {
+  logger.stage('PHASE 7C: ASSEMBLE VIDEO (Shotstack - CLOUD)');
+
+  try {
+    if (!process.env.SHOTSTACK_SANDBOX_API_KEY && !process.env.SHOTSTACK_API_KEY) {
+      throw new Error('SHOTSTACK_API_KEY not found in .env');
+    }
+
+    const assembler = new ShotstackAssembler(logger, true); // Use sandbox for free testing
+
+    // Get images
+    const imageDir = './output/generated_images';
+    if (!fs.existsSync(imageDir)) {
+      throw new Error('No images found');
+    }
+
+    const images = fs.readdirSync(imageDir)
+      .filter(f => f.endsWith('.png'))
+      .sort()
+      .map(f => ({
+        path: path.join(imageDir, f),
+        duration: 5, // 5 seconds per image
+      }));
+
+    if (images.length === 0) {
+      throw new Error('No PNG images found');
+    }
+
+    logger.info(`Found ${images.length} images for assembly`);
+
+    // Get narration
+    const narrationFile = './output/narration.mp3';
+    if (!fs.existsSync(narrationFile)) {
+      throw new Error('Narration MP3 not found');
+    }
+
+    // Assemble with Shotstack
+    const result = await assembler.assembleVideo(
+      images,
+      narrationFile,
+      './output/final_video.mp4'
+    );
+
+    const shotCost = parseFloat(result.cost);
+    costTracker.addCall('shotstack', 'render', shotCost, { images: images.length });
+
+    logger.success(`Phase 7C complete: Video rendered (${result.sizeMB} MB, $${result.cost})`);
+    logger.info(`Task ID: ${result.taskId}`);
+
+    errorHandler.saveCheckpoint('phase7c-assembled-shotstack', { result });
+    return result;
+
+  } catch (error) {
+    logger.error('Phase 7C failed', error);
+    throw error;
+  }
+}
+
+/**
+ * Phase 7: Assemble video (choose FFmpeg, Descript, or Shotstack)
+ */
+async function phase7Assemble(assemblyMethod = 'ffmpeg') {
+  if (assemblyMethod === 'descript') {
     return await phase7AssembleDescript();
+  } else if (assemblyMethod === 'shotstack') {
+    return await phase7AssembleShotstack();
   } else {
     return await phase7AssembleFFmpeg();
   }
@@ -338,16 +402,26 @@ async function main() {
     // Parse arguments
     const args = process.argv.slice(2);
     const url = args[0] || DEFAULT_URL;
-    const useDescript = args.includes('--use-descript');
+
+    let assemblyMethod = 'ffmpeg';
+    if (args.includes('--use-descript')) {
+      assemblyMethod = 'descript';
+    } else if (args.includes('--use-shotstack')) {
+      assemblyMethod = 'shotstack';
+    }
 
     logger.info(`\n${'='.repeat(70)}`);
     logger.info('VideoGen YouTube - Complete Automated Pipeline');
     logger.info(`URL: ${url}`);
-    if (useDescript) {
-      logger.info('Assembly Method: Descript API (higher quality, paid)');
-    } else {
-      logger.info('Assembly Method: FFmpeg (free, local)');
-    }
+    logger.info(
+      `Assembly Method: ${
+        assemblyMethod === 'shotstack'
+          ? 'Shotstack (cloud, fast, $0.12/min in production, free sandbox)'
+          : assemblyMethod === 'descript'
+          ? 'Descript API (higher quality, $15/video, auto-captions)'
+          : 'FFmpeg (free, local, no captions)'
+      }`
+    );
     logger.info(`${'='.repeat(70)}\n`);
 
     // Run phases
@@ -361,10 +435,11 @@ async function main() {
     // Assembly requires manual Runway download for now
     logger.warn('\n⚠️  MANUAL STEP: Download Runway videos from https://app.runwayml.com/queue');
     logger.warn('   Then re-run with appropriate assembly method:\n');
-    logger.warn('   FFmpeg (free):  node pipeline-complete.js --assemble');
-    logger.warn('   Descript (paid): node pipeline-complete.js --assemble --use-descript\n');
+    logger.warn('   FFmpeg (free):        node pipeline-complete.js --assemble');
+    logger.warn('   Descript (paid):      node pipeline-complete.js --assemble --use-descript');
+    logger.warn('   Shotstack (fast):     node pipeline-complete.js --assemble --use-shotstack\n');
 
-    await phase7Assemble(useDescript);
+    await phase7Assemble(assemblyMethod);
     await phase8YouTube();
 
     // Final report
@@ -408,5 +483,6 @@ module.exports = {
   phase7Assemble,
   phase7AssembleFFmpeg,
   phase7AssembleDescript,
+  phase7AssembleShotstack,
   phase8YouTube
 };
