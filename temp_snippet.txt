@@ -1,0 +1,80 @@
+        "images": entries,
+        "local_paths": [str(p) for p in image_paths],
+        "timestamp": time.time(),
+    }
+    manifest_path = OUTPUT_DIR / "generated_assets.json"
+    manifest_path.write_text(json.dumps(manifest, indent=2))
+    logger.info(f"[ASSETS] Saved manifest to {manifest_path}")
+
+
+def append_asset_manifest(entries: List[Dict]):
+    """Append new entries to existing manifest (if any)."""
+    manifest_path = OUTPUT_DIR / "generated_assets.json"
+    if manifest_path.exists():
+        try:
+            data = json.loads(manifest_path.read_text())
+        except Exception:
+            data = {}
+    else:
+        data = {}
+    images = data.get("images", [])
+    images.extend(entries)
+    data["images"] = images
+    manifest_path.write_text(json.dumps(data, indent=2))
+    logger.info(f"[ASSETS] Appended {len(entries)} entries to manifest")
+
+
+def load_asset_entries() -> List[Dict]:
+    manifest_path = OUTPUT_DIR / "generated_assets.json"
+    if manifest_path.exists():
+        try:
+            data = json.loads(manifest_path.read_text())
+            return data.get("images", [])
+        except Exception:
+            return []
+    return []
+
+
+# ---------------------------------------------------------------------------
+# Phase 4: Narration (ElevenLabs)
+# ---------------------------------------------------------------------------
+def generate_narration(text: str) -> Path:
+    """Generate narration audio via ElevenLabs."""
+    api_key = os.getenv("ELEVENLABS_API_KEY")
+    audio_path = OUTPUT_DIR / "narration.mp3"
+
+    if not api_key:
+        logger.warning("ELEVENLABS_API_KEY missing; creating silent placeholder narration.")
+        return create_silent_audio(text, audio_path)
+
+    try:
+        from elevenlabs import ElevenLabs
+
+        client = ElevenLabs(api_key=api_key)
+        voice_id = os.getenv("ELEVENLABS_VOICE_ID", "21m00Tcm4TlvDq8ikWAM")  # Rachel
+        model_id = os.getenv("ELEVENLABS_MODEL_ID", "eleven_monolingual_v1")
+
+        logger.info(f"[TTS] Generating narration with voice {voice_id}")
+        audio_stream = client.text_to_speech.convert(text=text[:6000], voice_id=voice_id, model_id=model_id)
+
+        bytes_written = 0
+        with open(audio_path, "wb") as f:
+            for chunk in audio_stream:
+                if chunk:
+                    f.write(chunk)
+                    bytes_written += len(chunk)
+
+        logger.info(f"[TTS] Saved narration.mp3 ({bytes_written} bytes)")
+        return audio_path
+
+    except Exception as exc:
+        logger.error(f"[TTS] Failed to generate narration ({exc}); creating placeholder audio.")
+        return create_silent_audio(text, audio_path)
+
+
+def create_silent_audio(text: str, output_path: Path) -> Path:
+    """Create a silent audio placeholder matching approximate speech duration."""
+    import wave
+    import struct
+
+    words = max(len(text.split()), 1)

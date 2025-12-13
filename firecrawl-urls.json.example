@@ -1,0 +1,92 @@
+{
+  "projects": {
+    "SEO_Best_Practices": {
+      "description": "SEO Best Practices 2025",
+      "urls": [
+        "https://developers.google.com/search/docs/beginner/get-started",
+        "https://moz.com/beginners-guide-to-seo",
+        "https://www.searchenginejournal.com/seo-guide/"
+      ],
+      "status": "ready_to_crawl",
+      "created_at": "2025-12-11"
+    },
+    "Your_New_Project": {
+      "description": "Replace with your topic",
+      "urls": [
+        "https://example.com/article-1",
+        "https://example.com/article-2",
+        "https://example.com/article-3"
+      ],
+      "status": "template",
+      "created_at": "2025-12-11"
+    },
+    "AI_Video_Generation": {
+      "description": "Latest AI video generation techniques and tools",
+      "urls": [
+        "https://runwayml.com/blog/video-generation",
+        "https://stability.ai/news/stable-video-diffusion",
+        "https://research.facebook.com/publications/emu-video/",
+        "https://openai.com/sora",
+        "https://www.synthesia.io/blog/ai-video-generation"
+      ],
+      "status": "ready_to_crawl",
+      "created_at": "2025-12-11"
+    },
+    "YouTube_Algorithm_2025": {
+      "description": "YouTube algorithm updates and best practices for 2025",
+      "urls": [
+        "https://www.youtube.com/creators/how-things-work/how-the-algorithm-works/",
+        "https://blog.hootsuite.com/youtube-algorithm/",
+        "https://vidiq.com/blog/post/youtube-algorithm/",
+        "https://www.tubebuddy.com/blog/youtube-algorithm",
+        "https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/"
+      ],
+      "status": "ready_to_crawl",
+      "created_at": "2025-12-11"
+    },
+    "Video_Editing_Automation": {
+      "description": "Automated video editing workflows and techniques",
+      "urls": [
+        "https://www.descript.com/blog/automated-video-editing",
+        "https://www.kapwing.com/blog/ai-video-editing/",
+        "https://www.adobe.com/products/premiere/sensei.html",
+        "https://runwayml.com/blog/ai-video-editing",
+        "https://blog.frame.io/ai-video-editing/"
+      ],
+      "status": "ready_to_crawl",
+      "created_at": "2025-12-11"
+    },
+    "Content_Strategy": {
+      "description": "Content strategy and planning for video creators",
+      "urls": [
+        "https://blog.hootsuite.com/video-marketing-strategy/",
+        "https://www.hubspot.com/video-marketing",
+        "https://contentmarketinginstitute.com/articles/video-content-strategy/",
+        "https://www.socialmediaexaminer.com/video-content-strategy/",
+        "https://sproutsocial.com/insights/video-marketing-strategy/"
+      ],
+      "status": "ready_to_crawl",
+      "created_at": "2025-12-11"
+    }
+  },
+  "instructions": {
+    "how_to_use": [
+      "1. Add a new project object with a descriptive name (use underscores, no spaces)",
+      "2. Add URLs you want to scrape in the 'urls' array",
+      "3. Set status to 'ready_to_crawl'",
+      "4. Run: node firecrawl-data-manager.js --project YourProjectName",
+      "5. JSONL data will be saved to output/projects/YourProjectName/dataset.jsonl"
+    ],
+    "example": {
+      "My_Docker_Guide": {
+        "description": "Docker for Beginners Complete Guide",
+        "urls": [
+          "https://docs.docker.com/get-started/",
+          "https://www.freecodecamp.org/news/docker-tutorial/",
+          "https://blog.docker.com/docker-best-practices/"
+        ],
+        "status": "ready_to_crawl"
+      }
+    }
+  }
+}

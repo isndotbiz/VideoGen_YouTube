@@ -2,20 +2,30 @@
 
 /**
  * PART 5: Generate Video Script from JSONL
+ * NOW WITH: Dynamic content, research data, image prompts, error handling
  *
  * Creates:
- * - Full video script with narration
+ * - Full video script with narration + timing
+ * - Image prompts (Flux Pro + Nano Banana)
  * - Storyboard with visual markers
  * - Timing and section markers
- * - B-roll suggestions
- * - ASCII diagrams/graphs
+ * - ElevenLabs narration markers
  *
  * Usage:
- *   node generate-video-script.js
+ *   node generate-video-script.js [jsonl-file]
  */
 
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
+
+const Logger = require('./lib/logger');
+const ErrorHandler = require('./lib/error-handler');
+const ImagePromptGenerator = require('./lib/image-prompt-generator');
+
+const logger = new Logger('./logs');
+const errorHandler = new ErrorHandler(logger);
+const promptGenerator = new ImagePromptGenerator(logger);
 
 function loadJsonl(filename = 'dataset.jsonl') {
   if (!fs.existsSync(filename)) {
@@ -223,13 +233,20 @@ function generateSlideOutlines(data) {
 }
 
 async function main() {
-  console.log('═══════════════════════════════════════════════════');
-  console.log('   Video Script Generator from JSONL');
-  console.log('═══════════════════════════════════════════════════\n');
-
   try {
-    const data = loadJsonl();
-    console.log(`📖 Loaded: ${data.title}`);
+    logger.stage('SCRIPT GENERATION FROM JSONL');
+
+    // Load dataset
+    const jsonlFile = process.argv[2] || 'dataset.jsonl';
+    const data = await errorHandler.retry(() => {
+      if (!fs.existsSync(jsonlFile)) {
+        throw new Error(`JSONL file not found: ${jsonlFile}`);
+      }
+      const line = fs.readFileSync(jsonlFile, 'utf8').trim().split('\n')[0];
+      return JSON.parse(line);
+    });
+
+    logger.success(`Loaded: "${data.title}"`);
 
     // Generate all components
     const storyboard = generateStoryboard(data);
@@ -238,11 +255,33 @@ async function main() {
     const editingGuide = generateEditingGuide(data);
     const slides = generateSlideOutlines(data);
 
+    // NEW: Generate image prompts
+    const sections = data.sections || [];
+    const imagePrompts = promptGenerator.generatePrompts(sections);
+    logger.success(`Generated ${imagePrompts.total} image prompts`);
+    errorHandler.saveCheckpoint('image-prompts', imagePrompts);
+
+    // Create image prompts markdown
+    let imagePromptsMarkdown = `# IMAGE GENERATION PROMPTS\n\n`;
+    imagePromptsMarkdown += `## Photorealistic Images (Flux Pro)\n`;
+    imagePromptsMarkdown += `Generated: ${new Date().toISOString()}\n\n`;
+    imagePrompts.photorealistic.forEach(prompt => {
+      imagePromptsMarkdown += `### ${prompt.section}\n`;
+      imagePromptsMarkdown += `\`\`\`\n${prompt.prompt}\n\`\`\`\n\n`;
+    });
+
+    imagePromptsMarkdown += `## Text/Chart Images (Nano Banana)\n`;
+    imagePrompts.textbased.forEach(prompt => {
+      imagePromptsMarkdown += `### ${prompt.section}\n`;
+      imagePromptsMarkdown += `\`\`\`\n${prompt.prompt}\n\`\`\`\n\n`;
+    });
+
     // Combine into master script
     let masterScript = `# COMPLETE VIDEO PRODUCTION SCRIPT\n`;
     masterScript += `## "${data.title}"\n`;
     masterScript += `**Generated:** ${new Date().toLocaleString()}\n`;
-    masterScript += `**Source:** ${data.url}\n\n`;
+    masterScript += `**Source:** ${data.url}\n`;
+    masterScript += `**Images:** ${imagePrompts.total} (${imagePrompts.photorealistic.length} photorealistic, ${imagePrompts.textbased.length} text-based)\n\n`;
     masterScript += `---\n\n`;
     masterScript += storyboard;
     masterScript += `---\n\n`;
@@ -252,47 +291,55 @@ async function main() {
     masterScript += `---\n\n`;
     masterScript += graphs;
     masterScript += `---\n\n`;
+    masterScript += imagePromptsMarkdown;
+    masterScript += `---\n\n`;
     masterScript += editingGuide;
 
     // Save files
     const slug = data.id || 'video-script';
+    const outputDir = './output';
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
-    fs.writeFileSync('video-storyboard.md', storyboard);
-    console.log('✅ Saved: video-storyboard.md');
+    fs.writeFileSync(path.join(outputDir, 'video-storyboard.md'), storyboard);
+    logger.success('Saved: video-storyboard.md');
 
-    fs.writeFileSync('video-narration.md', narration);
-    console.log('✅ Saved: video-narration.md');
+    fs.writeFileSync(path.join(outputDir, 'video-narration.md'), narration);
+    logger.success('Saved: video-narration.md');
 
-    fs.writeFileSync('video-graphs.md', graphs);
-    console.log('✅ Saved: video-graphs.md');
+    fs.writeFileSync(path.join(outputDir, 'video-graphs.md'), graphs);
+    logger.success('Saved: video-graphs.md');
 
-    fs.writeFileSync('video-editing-guide.md', editingGuide);
-    console.log('✅ Saved: video-editing-guide.md');
+    fs.writeFileSync(path.join(outputDir, 'video-editing-guide.md'), editingGuide);
+    logger.success('Saved: video-editing-guide.md');
 
-    fs.writeFileSync('slide-deck.md', slides);
-    console.log('✅ Saved: slide-deck.md');
+    fs.writeFileSync(path.join(outputDir, 'slide-deck.md'), slides);
+    logger.success('Saved: slide-deck.md');
 
-    fs.writeFileSync('COMPLETE_VIDEO_SCRIPT.md', masterScript);
-    console.log('✅ Saved: COMPLETE_VIDEO_SCRIPT.md');
+    fs.writeFileSync(path.join(outputDir, 'image-prompts.md'), imagePromptsMarkdown);
+    logger.success('Saved: image-prompts.md (NEW - for image generation)');
 
-    console.log('\n═══════════════════════════════════════════════════');
-    console.log('   Video Production Materials Ready');
-    console.log('═══════════════════════════════════════════════════');
-    console.log('\nGenerated files:');
-    console.log('  1. COMPLETE_VIDEO_SCRIPT.md (master file)');
-    console.log('  2. video-storyboard.md');
-    console.log('  3. video-narration.md');
-    console.log('  4. slide-deck.md');
-    console.log('  5. video-graphs.md');
-    console.log('  6. video-editing-guide.md');
-    console.log('\nNext steps:');
-    console.log('  • Review the storyboard');
-    console.log('  • Record narration using video-narration.md');
-    console.log('  • Use slide-deck.md to create visuals in design tool');
-    console.log('  • Feed into AI video tools: Pika Labs, Runway, or Luma AI');
+    fs.writeFileSync(path.join(outputDir, 'COMPLETE_VIDEO_SCRIPT.md'), masterScript);
+    logger.success('Saved: COMPLETE_VIDEO_SCRIPT.md');
+
+    // Save prompts as JSON for image generator
+    fs.writeFileSync(path.join(outputDir, 'image-prompts.json'), JSON.stringify(imagePrompts, null, 2));
+    logger.success('Saved: image-prompts.json (for automation)');
+
+    logger.stage('VIDEO SCRIPT GENERATION COMPLETE');
+
+    logger.summary({
+      title: data.title,
+      sections: sections.length,
+      total_images: imagePrompts.total,
+      flux_pro: imagePrompts.photorealistic.length,
+      nano_banana: imagePrompts.textbased.length,
+      output_files: 7,
+    });
 
   } catch (error) {
-    console.error('❌ Failed:', error.message);
+    logger.error('Script generation failed', error);
     process.exit(1);
   }
 }

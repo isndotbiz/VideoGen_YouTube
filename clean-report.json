@@ -3,13 +3,13 @@
   "records_processed": 1,
   "total_errors": 0,
   "total_warnings": 0,
-  "timestamp": "2025-12-10T17:34:01.888Z",
+  "timestamp": "2025-12-13T22:05:23.873Z",
   "records": [
     {
       "id": "claude-code-vs-codex-why-i-use-claude-code-vs-codex-why-i-use-both-and-you-should-too",
       "title": "Claude Code vs Codex: Why I Use Both (And You Should Too) | Nathan Onn",
-      "word_count": 1609,
-      "char_count": 14405,
+      "word_count": 1614,
+      "char_count": 14460,
       "sections": 0
     }
   ]

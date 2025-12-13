@@ -1,6 +1,6 @@
 # COMPLETE VIDEO PRODUCTION SCRIPT
 ## "Claude Code vs Codex: Why I Use Both (And You Should Too) | Nathan Onn"
-**Generated:** 12/10/2025, 9:34:01 AM
+**Generated:** 12/11/2025, 6:53:51 PM
 **Source:** https://www.nathanonn.com/claude-code-vs-codex-why-i-use-both-and-you-should-too/
 
 ---
@@ -8,7 +8,7 @@
 # STORYBOARD: Claude Code vs Codex: Why I Use Both (And You Should Too) | Nathan Onn
 
 **Estimated Duration:** 17 minutes
-**Content Volume:** 14405 characters, 0 major sections
+**Content Volume:** 14476 characters, 0 major sections
 
 ## Scene Breakdown
 

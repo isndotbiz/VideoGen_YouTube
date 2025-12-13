@@ -1,7 +1,7 @@
 # STORYBOARD: Claude Code vs Codex: Why I Use Both (And You Should Too) | Nathan Onn
 
 **Estimated Duration:** 17 minutes
-**Content Volume:** 14405 characters, 0 major sections
+**Content Volume:** 14476 characters, 0 major sections
 
 ## Scene Breakdown
 

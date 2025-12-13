@@ -47,11 +47,11 @@ class ResearchAgentLauncher {
         6. Prioritize Google's official documentation
       `,
       expectedOutput: {
-        facts: ['fact_1', 'fact_2', ...],
-        statistics: ['stat_1', 'stat_2', ...],
-        guidelines: ['guideline_1', ...],
+        facts: ['fact_1', 'fact_2'],
+        statistics: ['stat_1', 'stat_2'],
+        guidelines: ['guideline_1'],
         sources: ['url_and_title'],
-        publishedDates: ['2024-11-20', ...],
+        publishedDates: ['2024-11-20'],
       }
     };
 
@@ -89,11 +89,11 @@ class ResearchAgentLauncher {
         7. Filter out spam and low-quality advice
       `,
       expectedOutput: {
-        commonTips: ['tip_1', 'tip_2', ...],
-        painPoints: ['issue_1', 'issue_2', ...],
-        practitionerInsights: ['insight_1', ...],
+        commonTips: ['tip_1', 'tip_2'],
+        painPoints: ['issue_1', 'issue_2'],
+        practitionerInsights: ['insight_1'],
         disagreements: [{ topic: 'X', perspectives: [] }],
-        discussionLinks: ['reddit.com/r/seo/...', ...],
+        discussionLinks: ['reddit.com/r/seo/example'],
       }
     };
 
@@ -130,10 +130,10 @@ class ResearchAgentLauncher {
         7. Document the context (industry, company size, timeframe)
       `,
       expectedOutput: {
-        provenTactics: ['tactic_1_with_results', ...],
+        provenTactics: ['tactic_1_with_results'],
         metrics: [{ tactic: 'X', improvement: '45%' }],
-        failedApproaches: ['approach_1_and_why', ...],
-        caseStudies: ['title_and_url', ...],
+        failedApproaches: ['approach_1_and_why'],
+        caseStudies: ['title_and_url'],
         timeframes: ['3_months', '6_months', '1_year'],
       }
     };

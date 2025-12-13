@@ -1,44 +1,46 @@
 {
   "projects": {
-    "SEO_Best_Practices": {
-      "description": "SEO Best Practices 2025",
+    "ComfyUI_Advanced_Workflows": {
+      "description": "Comprehensive guide to advanced ComfyUI workflows including text-to-speech, voice cloning, image generation, LoRA training, and multi-image editing techniques",
       "urls": [
-        "https://developers.google.com/search/docs/beginner/get-started",
-        "https://moz.com/beginners-guide-to-seo",
-        "https://www.searchenginejournal.com/seo-guide/"
+        "https://www.nextdiffusion.ai/tutorials/exploring-dia-a-powerful-text-to-speech-model",
+        "https://www.nextdiffusion.ai/tutorials/chatterbox-in-comfyui-tts-voice-cloning-conversion",
+        "https://www.nextdiffusion.ai/tutorials/how-to-train-a-flux-lora-with-fluxgym-on-runpod",
+        "https://www.nextdiffusion.ai/tutorials/flux-kontext-dev-multi-image-workflows-comfyui",
+        "https://www.nextdiffusion.ai/tutorials/create-consistent-ai-influencers-comfyui-earn-online-fanvue",
+        "https://www.nextdiffusion.ai/tutorials/how-to-use-qwen-text-to-image-comfyui-gguf-lightning-lora",
+        "https://www.nextdiffusion.ai/tutorials/how-to-use-qwen-multi-image-editing-in-comfyui-a-step-by-step-guide",
+        "https://www.nextdiffusion.ai/tutorials/consistent-poses-qwen-image-edit-2509-controlnet-union-comfyui",
+        "https://www.nextdiffusion.ai/tutorials/how-to-generate-4k-images-comfyui-flux-dype",
+        "https://www.nextdiffusion.ai/tutorials/multi-angle-image-generation-qwen-image-edit-comfyui",
+        "https://www.nextdiffusion.ai/tutorials/consistent-z-image-turbo-images-controlnet-comfyui-t2i"
       ],
-      "status": "ready_to_crawl",
-      "created_at": "2025-12-11"
+      "status": "ready_to_crawl"
     },
-    "Your_New_Project": {
-      "description": "Replace with your topic",
+    "N8N_Workflow_Automation_Mastery": {
+      "description": "Complete guide to n8n workflow automation including AI agents, business workflows, social media automation, enterprise integrations, and building custom AI-powered content engines",
       "urls": [
-        "https://example.com/article-1",
-        "https://example.com/article-2",
-        "https://example.com/article-3"
+        "https://medium.com/maxim-epochs/top-3-ai-evaluation-tools-in-2025-comparison-between-maxim-ai-arize-and-langfuse-7fc2411dad6a",
+        "https://medium.com/@muhammadzeeshansafdar17/building-an-ai-agent-for-business-workflows-9ac31d68b877",
+        "https://medium.com/@julian.goldie/lemon-ai-agent-automates-what-used-to-take-hours-setup-takes-10-minutes-775491864d3d",
+        "https://medium.com/@kalpesh.ghelani1989/how-i-built-a-4-200-month-virtual-assistant-agency-while-working-my-9-to-5-and-why-everyones-e90979dda1f5",
+        "https://medium.com/@dorinelrushi8/the-impact-of-n8n-workflows-on-business-and-the-future-of-ai-6980ca8dd77e",
+        "https://medium.com/ai-advances/llm-safety-training-and-jail-breaking-57417f486d9f",
+        "https://medium.com/@naorcho/how-to-use-n8n-locally-with-docker-540399383c49",
+        "https://medium.com/@DhamanS/feature-stores-without-human-engineers-how-iceberg-snowflake-cortex-n8n-create-validate-and-7ecb67c409fe",
+        "https://medium.com/@xianli_74374/how-to-self-host-n8n-on-aws-ec2-and-save-hundreds-of-dollars-every-year-cd50b79a1604",
+        "https://medium.com/@myskill.id/automating-social-media-with-n8n-ce9c45be2bdf",
+        "https://medium.com/@shireen.low/from-zero-to-workflow-hero-unlocking-automation-with-n8ns-basic-nodes-e11a47ca6c9e",
+        "https://medium.com/@mustaphaliaichi/from-curiosity-to-deployment-how-i-turned-6-000-n8n-workflows-into-an-ai-generator-and-why-this-e916923826ea",
+        "https://medium.com/activated-thinker/want-to-score-unlimited-leads-for-free-discover-how-i-generated-3-000-in-just-10-days-using-n8n-24f816301fc1",
+        "https://medium.com/@dvasquez.422/multi-platform-posting-with-n8n-how-i-eliminated-manual-social-media-uploads-b66774e7fbb4",
+        "https://medium.com/towards-artificial-intelligence/under-the-hood-understanding-tools-like-n8n-and-building-custom-nodes-for-enterprise-ai-workflows-2a17a4852240",
+        "https://medium.com/cub3d/why-teams-love-n8n-the-honest-no-code-game-changer-d01de414ebd4",
+        "https://medium.com/@letslearnnow/the-rise-of-n8n-why-architects-and-developers-cant-stop-talking-about-it-03bb0bb0b765",
+        "https://medium.com/aimonks/building-the-ultimate-ai-content-engine-integrating-n8n-sora-2-gemini-and-kie-ai-eeaa3e49dc09",
+        "https://medium.com/@2nick2patel2/n8n-event-sourced-workflows-exactly-once-integrations-with-outbox-inboxes-946f4d75b105"
       ],
-      "status": "template",
-      "created_at": "2025-12-11"
-    }
-  },
-  "instructions": {
-    "how_to_use": [
-      "1. Add a new project object with a descriptive name (use underscores, no spaces)",
-      "2. Add URLs you want to scrape in the 'urls' array",
-      "3. Set status to 'ready_to_crawl'",
-      "4. Run: node firecrawl-data-manager.js --project YourProjectName",
-      "5. JSONL data will be saved to output/projects/YourProjectName/dataset.jsonl"
-    ],
-    "example": {
-      "My_Docker_Guide": {
-        "description": "Docker for Beginners Complete Guide",
-        "urls": [
-          "https://docs.docker.com/get-started/",
-          "https://www.freecodecamp.org/news/docker-tutorial/",
-          "https://blog.docker.com/docker-best-practices/"
-        ],
-        "status": "ready_to_crawl"
-      }
+      "status": "ready_to_crawl"
     }
   }
 }
