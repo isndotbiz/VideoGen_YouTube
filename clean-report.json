@@ -3,13 +3,13 @@
   "records_processed": 1,
   "total_errors": 0,
   "total_warnings": 0,
-  "timestamp": "2025-12-13T22:05:23.873Z",
+  "timestamp": "2025-12-13T22:22:55.659Z",
   "records": [
     {
-      "id": "claude-code-vs-codex-why-i-use-claude-code-vs-codex-why-i-use-both-and-you-should-too",
-      "title": "Claude Code vs Codex: Why I Use Both (And You Should Too) | Nathan Onn",
-      "word_count": 1614,
-      "char_count": 14460,
+      "id": "claude-vs-chatgpt-whatx27s-the-claude-vs-chatgpt",
+      "title": "Claude vs. ChatGPT: What&#x27;s the difference? [2025]",
+      "word_count": 3331,
+      "char_count": 21493,
       "sections": 0
     }
   ]

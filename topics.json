@@ -1,0 +1,42 @@
+[
+  {
+    "id": "claude-vs-chatgpt",
+    "title": "Claude vs ChatGPT: Which AI Should You Use in 2025?",
+    "url": "https://zapier.com/blog/claude-vs-chatgpt/",
+    "tags": ["AI", "Claude", "ChatGPT", "Comparison", "2025"],
+    "duration": "4-5 min",
+    "seo_intent": "People deciding between Claude and ChatGPT - high conversion"
+  },
+  {
+    "id": "claude-vs-gemini",
+    "title": "Claude vs Google Gemini: AI Comparison for 2025",
+    "url": "https://www.appypieautomate.ai/blog/claude-vs-chatgpt",
+    "tags": ["AI", "Claude", "Gemini", "Google", "Comparison"],
+    "duration": "4-5 min",
+    "seo_intent": "Google search high volume, decision-making keywords"
+  },
+  {
+    "id": "claude-coding",
+    "title": "Claude for Coding: The Developer's Guide to AI Pair Programming",
+    "url": "https://www.descope.com/blog/post/claude-vs-chatgpt",
+    "tags": ["Claude", "Coding", "Programming", "Developers", "AI"],
+    "duration": "5-6 min",
+    "seo_intent": "Developer audience, high-intent keywords, better CTR"
+  },
+  {
+    "id": "free-ai-tools",
+    "title": "Free AI Tools That Actually Work Better Than Paid Plans",
+    "url": "https://www.appypieautomate.ai/blog/claude-vs-chatgpt",
+    "tags": ["AI", "Free", "Tools", "Budget", "Comparison"],
+    "duration": "5-6 min",
+    "seo_intent": "Budget-conscious audience, high search volume"
+  },
+  {
+    "id": "chatgpt-beginners",
+    "title": "ChatGPT for Beginners: Complete Step-by-Step Tutorial",
+    "url": "https://zapier.com/blog/how-to-use-chatgpt/",
+    "tags": ["ChatGPT", "Tutorial", "Beginners", "Guide", "How-To"],
+    "duration": "6-7 min",
+    "seo_intent": "Beginner audience, educational content, long watch time"
+  }
+]
