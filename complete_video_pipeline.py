@@ -136,8 +136,22 @@ Return ONLY the script text, nothing else."""
             print(f"[API] ElevenLabs")
             print(f"[VOICE] Rachel (professional)")
 
-            # Clean script for TTS (remove [PAUSE] markers)
-            cleaned_script = script.replace('[PAUSE:2000ms]', '').replace('[PAUSE:1500ms]', '')
+            # Clean script for TTS - extract only quoted text, remove headers and pauses
+            import re
+
+            # Extract all quoted text (text between quotes)
+            quoted_parts = re.findall(r'"([^"]*)"', script)
+
+            if quoted_parts:
+                # Join all quoted sections with proper spacing
+                cleaned_script = ' '.join(quoted_parts)
+                # Now remove PAUSE markers
+                cleaned_script = re.sub(r'\s*\[PAUSE:\d+ms\]\s*', ' ', cleaned_script)
+                # Remove extra whitespace
+                cleaned_script = re.sub(r'\s+', ' ', cleaned_script).strip()
+            else:
+                # Fallback: if no quotes found, use original script
+                cleaned_script = script.replace('[PAUSE:2000ms]', '').replace('[PAUSE:1500ms]', '')
 
             # Call ElevenLabs API
             url = "https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM"
@@ -333,9 +347,12 @@ Return ONLY the script text, nothing else."""
                         {
                             "clips": [
                                 {
-                                    "type": "color",
-                                    "duration": duration,
-                                    "color": "#0a0e27"
+                                    "asset": {
+                                        "type": "color",
+                                        "color": "#0a0e27"
+                                    },
+                                    "start": 0,
+                                    "length": duration
                                 }
                             ]
                         }

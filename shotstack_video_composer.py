@@ -28,27 +28,26 @@ class ShotstackComposer:
             return
 
     def upload_to_s3_hotlink(self):
-        """Use Hotlink URL service instead of S3 for testing"""
-        print(f"\n[STEP 1] PREPARING HOTLINK URLS")
+        """Get S3 URL for narration"""
+        print(f"\n[STEP 1] PREPARING NARRATION URL")
         print("-" * 80)
 
         try:
-            # For local testing, we'll use file:// URLs as fallback
-            # In production, upload to S3 and use S3 URLs
+            # Check for S3 URL in environment or use hardcoded from upload
+            import boto3
+            from config import APIConfig
 
-            if os.path.exists(self.narration_path):
-                # For Shotstack, we need a public URL
-                # Use a simple HTTP server or S3 in production
-                print(f"[INFO] Narration file found: {self.narration_path}")
-                print(f"[NOTE] In production, upload to S3 and use S3 URL")
+            aws_bucket = APIConfig.AWS_S3_BUCKET or "video-gen-20251210114241"
+            aws_region = APIConfig.AWS_REGION or "us-east-1"
 
-                # For now, use file:// as fallback
-                narration_url = f"file://{os.path.abspath(self.narration_path)}"
-                print(f"[URL] {narration_url}")
-                return narration_url
-            else:
-                print(f"[ERROR] Narration file not found: {self.narration_path}")
-                return None
+            s3_key = "best_free_ai_tools/narration.mp3"
+            narration_url = f"https://{aws_bucket}.s3.{aws_region}.amazonaws.com/{s3_key}"
+
+            print(f"[S3] Using S3 URL")
+            print(f"[BUCKET] {aws_bucket}")
+            print(f"[KEY] {s3_key}")
+            print(f"[URL] {narration_url}")
+            return narration_url
 
         except Exception as e:
             print(f"[ERROR] {str(e)}")
@@ -74,8 +73,12 @@ class ShotstackComposer:
                 "callback": ""  # Leave empty for now, or provide webhook URL
             }
 
+            # Get duration from the first clip in the first track
+            first_clip = config['timeline']['tracks'][0]['clips'][0]
+            duration = first_clip.get('length') or first_clip.get('duration', 210)
+
             print(f"[CONFIG] Payload prepared")
-            print(f"[DURATION] {config['timeline']['clips'][0]['duration']} seconds")
+            print(f"[DURATION] {duration} seconds")
             print(f"[RESOLUTION] {config['output']['resolution']}")
 
             return payload
@@ -92,7 +95,7 @@ class ShotstackComposer:
         try:
             headers = {
                 "Content-Type": "application/json",
-                "Authorization": f"Bearer {self.shotstack_api_key}"
+                "x-api-key": self.shotstack_api_key
             }
 
             print(f"[API] Sending request to Shotstack...")
@@ -127,7 +130,7 @@ class ShotstackComposer:
         try:
             status_url = f"https://api.shotstack.io/stage/render/{render_id}"
             headers = {
-                "Authorization": f"Bearer {self.shotstack_api_key}"
+                "x-api-key": self.shotstack_api_key
             }
 
             print(f"[CHECKING] Status for render {render_id}...")
