@@ -1,0 +1,300 @@
+================================================================================
+VIDEOGEN YOUTUBE - COMPLETE 11-STAGE WORKFLOW & API STATUS
+================================================================================
+
+STAGE 1: WEB SCRAPING
+  Tool: Firecrawl API
+  Input: URL/topic
+  Output: JSONL file with scraped content + 3 manual sources
+  Time: 2-3 minutes
+
+STAGE 2: SCRIPT GENERATION
+  Tool: Claude LLM (Anthropic API)
+  Input: Research JSONL file
+  Output: Professional script with [PAUSE:2000ms] markers
+  Length: 600-1000 words (3-5 minutes read time)
+  Critical: Use [PAUSE:2000ms] NOT "pause for 2 seconds" - ElevenLabs reads everything
+  Time: 3-5 minutes
+
+STAGE 3: COLOR PALETTE DESIGN
+  Tool: Manual (Coolors.co or similar)
+  Output: 5 colors in HEX format
+  Requirement: WCAG AA compliance (4.5:1 contrast minimum)
+  Colors: Primary, Secondary, Tertiary, Background, Text
+  Time: 5-10 minutes
+
+STAGE 4: IMAGE & INFOGRAPHIC GENERATION
+  Tools:
+    - FAL.ai Flux Dev model (images)
+    - FAL.ai Nano Banana (infographics)
+    - Local: Comfy GPU with 3090 (optional override)
+  Backup: Replicate API
+  Output: PNG images and infographics
+  Time: 5-10 minutes
+
+STAGE 5: ANIMATION GENERATION
+  Tool: FAL.ai WAN 2.5 model (image-to-video)
+  Input: Static images + motion descriptions
+  Output: 4-second video clips (16:9, 1080p)
+  Time: 2-3 minutes PER animation (20-30 min for 8)
+
+STAGE 6: NARRATION GENERATION
+  Tool: ElevenLabs API (text-to-speech)
+  Voice: Rachel (professional, clear)
+  Input: Clean script (no [PAUSE] text spoken)
+  Output: MP3 narration
+  Time: 30 seconds
+
+STAGE 7: BACKGROUND MUSIC & AUDIO MIXING
+  Tool: Pexels API (fetch royalty-free music)
+  Mixing Tool: pydub or ffmpeg
+  Settings:
+    - Narration: 100% volume
+    - Background music: 15% volume (0.15 multiplier = -16dB)
+  Output: mixed_audio.mp3
+  Time: 2-3 minutes
+
+STAGE 8: SUBTITLE GENERATION
+  Tool: Assembly AI (speech-to-text)
+  Input: Narration MP3
+  Output: SRT subtitle file with word-level timing
+  Format: SubRip Text format (synced to audio)
+  Time: 1-2 minutes
+
+STAGE 9: VIDEO COMPOSITION
+  Tool: Shotstack API (primary) or FFmpeg (backup)
+  Inputs: All above components
+  Layering:
+    1. Colored background video (1920x1080, 24fps)
+    2. Static images (timed to script)
+    3. Animation clips (timed to script)
+    4. Subtitle overlays (SRT text)
+    5. Title card (first 2 seconds)
+    6. Mixed audio (narration + 15% BGM)
+  Codec: H.264, Audio: AAC 128kbps
+  Output: video_COMPLETE.mp4
+  Time: 5-15 minutes
+
+STAGE 10: PLATFORM OPTIMIZATION (OPTIONAL)
+  Creates versions for:
+    - YouTube: 1920x1080 (16:9)
+    - TikTok: 1080x1920 (9:16)
+    - Instagram: 1080x1920 with safe area
+    - Twitter: 1280x720 (16:9)
+  Time: 5-10 minutes
+
+STAGE 11: CLOUD STORAGE (OPTIONAL)
+  Tool: AWS S3 bucket
+  Stores: Final video + all assets
+  Time: 5 minutes
+
+================================================================================
+TOTAL WORKFLOW TIME
+================================================================================
+
+Without Animations: 10-15 minutes
+  - Web Scraping:    2-3 min
+  - Script:          3-5 min
+  - Colors:          5-10 min
+  - Images:          5-10 min
+  - Narration:       30 sec
+  - Audio Mix:       2-3 min
+  - Subtitles:       1-2 min
+  - Composition:     5-15 min
+
+With Animations: 60-90 minutes
+  (Add 20-30 min for 8 animations @ 2-3 min each)
+
+Fastest Test Video: 5-10 minutes
+  (Skip images/animations, use placeholders)
+
+================================================================================
+API KEY VERIFICATION STATUS
+================================================================================
+
+PRIMARY APIS (CRITICAL) - All Verified Working:
+  [OK] ELEVENLABS_API_KEY          -> Text-to-speech narration
+  [OK] FAL_API_KEY                 -> Image & animation generation (Flux + WAN 2.5)
+  [OK] ASSEMBLYAI_API_KEY          -> Subtitle generation (speech-to-text)
+  [OK] PEXELS_API_KEY              -> Royalty-free music & videos
+  [OK] SHOTSTACK_API_KEY           -> Video composition/stitching
+
+BACKUP APIS - Available for Fallback:
+  [OK] REPLICATE_API_TOKEN         -> Alternative image/video generation
+  [OK] OPENAI_API_KEY              -> Script writing & TTS alternative
+  [OK] ANTHROPIC_API_KEY           -> Claude API for script generation
+  [OK] RUNWAYML_API_KEY            -> Alternative video generation
+  [OK] AWS_ACCESS_KEY_ID           -> Cloud storage (S3)
+  [OK] AWS_SECRET_ACCESS_KEY       -> Cloud storage secret
+
+OPTIONAL/BONUS APIs:
+  [OK] GEMINI_API_KEY              -> Google advanced AI
+  [OK] GROQ_API_KEY                -> Fast inference
+  [OK] PERPLEXITY_API_KEY          -> AI search
+  [OK] OPENROUTER_API_KEY          -> Multi-model LLM
+  [OK] DESCRIPT_API_KEY            -> Video editing alternative
+  [OK] SQUADBOX_API_KEY            -> Content moderation
+
+LOCAL SETUP:
+  [OPTIONAL] COMFY_GPU_ENDPOINT    -> Local GPU image generation (3090)
+  [SYSTEM]   FFmpeg                -> Video composition fallback (fallback installer: choco install ffmpeg)
+
+================================================================================
+CRITICAL RULES TO REMEMBER
+================================================================================
+
+1. ElevenLabs Script Format:
+   ✗ WRONG: "This is a test. Pause for 2 seconds. Now continue."
+   ✓ RIGHT: "This is a test. [PAUSE:2000ms] Now continue."
+   WHY: ElevenLabs reads everything aloud. [PAUSE] format adds silence, not spoken words.
+
+2. Background Music Volume:
+   - Narration: 100% (primary, should be clearly audible)
+   - Background music: 15% volume (0.15 multiplier or -16dB)
+   - Result: Music is subtle background, narration stays clear
+
+3. Color Palette WCAG Compliance:
+   - All text must have 4.5:1 contrast ratio minimum with background
+   - Test with: WebAIM Contrast Checker tool
+   - Required for video accessibility
+
+4. Image Generation Prompts:
+   - Always include color hex codes: "using colors #1e3c72 and #ff6b35"
+   - Always include resolution: "4K quality", "high resolution"
+   - Always include style: "professional", "modern", "infographic"
+
+5. Animation Duration:
+   - Each WAN 2.5 animation: Always 4 seconds (fixed)
+   - Aspect ratio: Always 16:9 (fixed)
+   - Quality: Always 1080p minimum
+
+6. Final Video Specifications:
+   - Resolution: 1920x1080 (Full HD, 16:9 aspect ratio)
+   - Codec: H.264 (libx264)
+   - Audio Codec: AAC
+   - Audio Bitrate: 128kbps
+   - Frame Rate: 24 FPS
+   - Duration: 3-5 minutes typical
+   - File Format: MP4
+
+7. Subtitle Timing:
+   - Must sync to ACTUAL narration audio (not script timing)
+   - Generated automatically by Assembly AI
+   - Format: SRT (SubRip Text)
+   - Works in: VLC, YouTube, all major platforms
+
+================================================================================
+TYPICAL WORKFLOW SEQUENCE
+================================================================================
+
+1. Web Scraping
+   Command: python scraper.py --topic "your-topic"
+   Output: research/[topic]/crawled_data.jsonl
+
+2. Generate Script
+   Command: python generate_script.py --research research/[topic]/crawled_data.jsonl
+   Output: scripts/[topic]/script_final.txt (with [PAUSE] markers)
+
+3. Design Color Palette
+   Command: Manual using Coolors.co
+   Output: design/[topic]/color_palette.json
+
+4. Generate Images & Infographics
+   Command: python generate_images.py --script scripts/[topic]/script_final.txt
+   Output: assets/[topic]/images/*.png + assets/[topic]/infographics/*.png
+
+5. Generate Animations
+   Command: python generate_animations_with_fal.py --images assets/[topic]/images/
+   Output: assets/[topic]/animations/*.mp4
+   Time: 20-30 minutes
+
+6. Generate Narration
+   Command: python generate_narration.py --script scripts/[topic]/script_final.txt
+   Output: audio/[topic]/narration.mp3
+
+7. Mix Audio
+   Command: python mix_audio.py --narration audio/[topic]/narration.mp3
+   Output: audio/[topic]/mixed_audio.mp3 (narration + 15% BGM)
+
+8. Generate Subtitles
+   Command: python get_subtitles_assembly.py --narration audio/[topic]/narration.mp3
+   Output: subtitles/[topic]/subtitles.srt
+
+9. Compose Final Video
+   Command: python compose_with_opencv.py --all-inputs
+   Output: video/[topic]/video_COMPLETE.mp4
+   Time: 5-15 minutes
+
+10. Create Platform Versions
+    Command: python create_platform_versions.py --video video/[topic]/video_COMPLETE.mp4
+    Outputs: YouTube/TikTok/Instagram/Twitter versions
+
+11. Upload to YouTube (manual or scripted)
+
+================================================================================
+CURRENT PROJECT STATUS
+================================================================================
+
+Video 1: "The 8 Free AI Tools That Will Make You Money"
+Status:
+  ✓ Narration: COMPLETE (2.3 MB MP3, ElevenLabs Rachel voice)
+  ✓ Subtitles: COMPLETE (SRT format)
+  ✓ Background Music: READY (placeholder music available)
+  ⏳ Base Video: COMPOSING (OpenCV, mixing narration + 15% BGM)
+  ⏳ Animations: PENDING (FAL.ai WAN 2.5, 8 x 4-second clips)
+
+Next Commands:
+  1. Wait for base video composition to complete
+  2. python generate_animations_with_fal.py (20-30 minutes)
+  3. Combine everything into final video
+
+================================================================================
+FILE ORGANIZATION
+================================================================================
+
+project/
+├── MASTER_WORKFLOW_DOCUMENTATION.md     (Complete reference)
+├── WORKFLOW_QUICK_REFERENCE.md          (Quick answers)
+├── WORKFLOW_COMPLETE.md                 (Architecture)
+├── test_all_apis.py                     (API verification script)
+├── config.py                            (API configuration loader)
+├── .env                                 (API keys - GITIGNORE)
+│
+├── research/[topic]/
+│   ├── crawled_data.jsonl               (Firecrawl output)
+│   └── sources.txt                      (List of 4 sources)
+│
+├── scripts/[topic]/
+│   └── script_final.txt                 (Script with [PAUSE] markers)
+│
+├── design/[topic]/
+│   └── color_palette.json               (5 colors + WCAG compliance)
+│
+├── assets/[topic]/
+│   ├── images/                          (Flux-generated images)
+│   ├── infographics/                    (Nano Banana graphics)
+│   └── animations/                      (WAN 2.5 video clips)
+│
+├── audio/[topic]/
+│   ├── narration.mp3                    (ElevenLabs output)
+│   ├── background_music.mp3             (Pexels download)
+│   └── mixed_audio.mp3                  (Narration + 15% BGM)
+│
+├── subtitles/[topic]/
+│   └── subtitles.srt                    (Assembly AI output)
+│
+└── video/[topic]/
+    ├── video_COMPLETE.mp4               (Final video)
+    └── platforms/
+        ├── video_youtube.mp4            (16:9)
+        ├── video_tiktok.mp4             (9:16)
+        ├── video_instagram.mp4          (9:16)
+        └── video_twitter.mp4            (16:9)
+
+================================================================================
+END OF WORKFLOW DOCUMENTATION
+================================================================================
+
+Generated: 2025-12-14
+All API keys verified as working.
+Ready to create test video and production videos.
