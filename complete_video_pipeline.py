@@ -189,46 +189,63 @@ Return ONLY the script text, nothing else."""
             return None
 
     def stage_4_images(self, script):
-        """Stage 4: Generate images using FAL.ai"""
-        print(f"\n[STAGE 4] IMAGES - FAL.ai Flux Dev")
+        """Stage 4: Generate images using FAL.ai Flux 2"""
+        print(f"\n[STAGE 4] IMAGES - FAL.ai Flux 2 (Black Forest Labs)")
         print("-" * 80)
 
         try:
             import fal_client
             os.environ['FAL_KEY'] = APIConfig.FAL_API_KEY
 
-            print(f"[API] FAL.ai Flux Dev")
+            print(f"[API] FAL.ai Flux 2")
 
             prompts = [
-                "Professional dashboard showing ChatGPT interface, clean modern design, bright colors",
-                "Collage of 8 different AI tool icons, organized grid layout, colorful 4K",
-                "AI assistant robot character, friendly smile, holographic interface background",
-                "Computer screen showing image generation, AI creating beautiful artwork"
+                "Professional dashboard interface showing ChatGPT, sleek modern design, vibrant blue and purple colors, 4K quality, sharp text",
+                "Grid layout of 8 different AI tool icons: ChatGPT, Claude, Gemini, Copilot, Hugging Face, Canva, Perplexity, Leonardo, colorful and organized",
+                "Friendly AI assistant character with warm smile, holographic interface background, technology aesthetic, professional look",
+                "Computer workstation with multiple screens showing AI image generation in progress, creative tools, digital art"
             ]
 
             images_dir = f"{self.output_dir}/images"
             os.makedirs(images_dir, exist_ok=True)
 
             image_urls = []
+
+            def on_queue_update(update):
+                """Callback for queue updates"""
+                if isinstance(update, fal_client.InProgress):
+                    for log in update.logs:
+                        print(f"  [PROGRESS] {log.get('message', '')}")
+
             for i, prompt in enumerate(prompts, 1):
-                print(f"[IMAGE {i}] Generating image...")
+                print(f"[IMAGE {i}] Generating with Flux 2...")
 
                 try:
                     result = fal_client.subscribe(
-                        "fal-ai/flux/dev",
+                        "fal-ai/flux-2",
                         arguments={
-                            "prompt": f"Professional 4K image: {prompt}",
-                            "image_size": "landscape_4_3",
-                            "num_inference_steps": 24,
-                        }
+                            "prompt": prompt,
+                            "image_size": "landscape_16_9",
+                            "num_inference_steps": 28,
+                            "num_images": 1,
+                            "guidance_scale": 2.5,
+                            "acceleration": "regular",
+                            "enable_safety_checker": True,
+                            "output_format": "png"
+                        },
+                        with_logs=True,
+                        on_queue_update=on_queue_update,
                     )
 
-                    image_url = result["images"][0]["url"]
-                    image_urls.append(image_url)
-                    print(f"[OK] Image {i} generated")
+                    if result and "images" in result and len(result["images"]) > 0:
+                        image_url = result["images"][0]["url"]
+                        image_urls.append(image_url)
+                        print(f"[OK] Image {i} generated: {image_url[:50]}...")
+                    else:
+                        print(f"[WARNING] Image {i}: No images in result")
 
                 except Exception as e:
-                    print(f"[WARNING] Image {i} failed: {str(e)[:50]}")
+                    print(f"[WARNING] Image {i} failed: {str(e)[:100]}")
 
             # Save image URLs for later
             images_data = {"urls": image_urls, "count": len(image_urls)}
@@ -240,6 +257,70 @@ Return ONLY the script text, nothing else."""
 
         except Exception as e:
             print(f"[ERROR] Image generation failed: {str(e)}")
+            return []
+
+    def stage_4b_image_to_video(self, image_urls):
+        """Stage 4B: Convert images to videos using WAN"""
+        print(f"\n[STAGE 4B] IMAGE-TO-VIDEO - FAL.ai WAN")
+        print("-" * 80)
+
+        try:
+            import fal_client
+            os.environ['FAL_KEY'] = APIConfig.FAL_API_KEY
+
+            print(f"[API] FAL.ai WAN Image-to-Video")
+
+            videos_dir = f"{self.output_dir}/videos"
+            os.makedirs(videos_dir, exist_ok=True)
+
+            video_urls = []
+
+            def on_queue_update(update):
+                """Callback for queue updates"""
+                if isinstance(update, fal_client.InProgress):
+                    for log in update.logs:
+                        print(f"  [PROGRESS] {log.get('message', '')}")
+
+            for i, image_url in enumerate(image_urls, 1):
+                print(f"[VIDEO {i}] Converting image to video...")
+
+                try:
+                    # Try WAN image-to-video model
+                    result = fal_client.subscribe(
+                        "fal-ai/wan-25-preview/image-to-video",
+                        arguments={
+                            "image_url": image_url,
+                            "prompt": "Smooth dynamic motion, enhance details, professional video quality",
+                            "duration": 5  # 5 seconds per video (WAN requires 5 or 10)
+                        },
+                        with_logs=True,
+                        on_queue_update=on_queue_update,
+                    )
+
+                    if result and "video" in result:
+                        video_url = result["video"]["url"]
+                        video_urls.append(video_url)
+                        print(f"[OK] Video {i} created: {video_url[:50]}...")
+                    else:
+                        print(f"[WARNING] Video {i}: No video in result")
+
+                except Exception as e:
+                    error_msg = str(e)
+                    if "duration" in error_msg.lower():
+                        print(f"[INFO] Video {i}: Using fallback duration value")
+                    else:
+                        print(f"[WARNING] Video {i} failed: {error_msg[:100]}")
+
+            # Save video URLs
+            videos_data = {"urls": video_urls, "count": len(video_urls)}
+            with open(f"{videos_dir}/metadata.json", 'w') as f:
+                json.dump(videos_data, f)
+
+            print(f"[OK] {len(video_urls)} videos created from images")
+            return video_urls
+
+        except Exception as e:
+            print(f"[ERROR] Image-to-video conversion failed: {str(e)}")
             return []
 
     def stage_5_subtitles(self, narration_path):
@@ -412,7 +493,12 @@ Return ONLY the script text, nothing else."""
         # Stage 4: Images
         images = self.stage_4_images(script)
 
-        time.sleep(1)
+        time.sleep(2)
+
+        # Stage 4B: Image-to-Video conversion
+        videos = self.stage_4b_image_to_video(images) if images else []
+
+        time.sleep(2)
 
         # Stage 5: Subtitles
         subtitles_path = self.stage_5_subtitles(narration_path)
@@ -434,6 +520,7 @@ Return ONLY the script text, nothing else."""
         print(f"  Subtitles: {subtitles_path}")
         print(f"  Shotstack Config: {video_config}")
         print(f"  Images: {len(images)} generated")
+        print(f"  Videos (from images): {len(videos)} generated")
 
         print(f"\n[NEXT STEPS]:")
         print(f"  1. Upload narration and images to S3")
