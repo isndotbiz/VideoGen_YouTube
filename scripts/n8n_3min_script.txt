@@ -1,0 +1,133 @@
+N8N WORKFLOW AUTOMATION MASTERY - 3 MINUTE SCRIPT
+
+[INTRO - 0-15 seconds]
+
+Welcome to the future of workflow automation. What if you could build complex business processes without writing a single line of code? That's n8n.
+
+[PAUSE: 1500ms]
+
+In the next three minutes, you'll discover how n8n is transforming the way businesses automate everything from customer support to content generation.
+
+[PAUSE: 1500ms]
+
+---
+
+[SECTION 1: WHAT IS N8N - 15-45 seconds]
+
+N8N is a free, open-source workflow automation platform. Think of it as Zapier's powerful cousin.
+
+[PAUSE: 800ms]
+
+It connects over 400 apps and services - everything from Gmail and Slack to HubSpot and AWS. You can build workflows by simply dragging and dropping nodes, creating connections between tools without any coding knowledge.
+
+[PAUSE: 1000ms]
+
+Whether you're a startup or enterprise, n8n scales with you. The best part? You can host it yourself and keep complete control of your data.
+
+[PAUSE: 1200ms]
+
+---
+
+[SECTION 2: WHY N8N MATTERS - 45-90 seconds]
+
+Automation isn't a luxury anymore - it's essential for survival. Let me show you why n8n is winning.
+
+[PAUSE: 1000ms]
+
+First: It's completely free and open-source. You're not locked into monthly subscriptions like Zapier charges. Deploy it once and automate forever.
+
+[PAUSE: 1200ms]
+
+Second: 400+ integrations cover almost every business tool you use. Need to connect your e-commerce store to your CRM? Done. Sync data from your forms to your database? One click.
+
+[PAUSE: 1000ms]
+
+Third: It scales infinitely. Build simple automations or complex AI-powered workflows that handle millions of operations.
+
+[PAUSE: 1000ms]
+
+Fourth: Self-hosting means your data stays private. No surveillance, no data selling. Complete ownership.
+
+[PAUSE: 1200ms]
+
+---
+
+[SECTION 3: REAL WORLD USE CASES - 90-150 seconds]
+
+Imagine you're running a content agency. Here's what n8n does:
+
+[PAUSE: 1000ms]
+
+Your client submits a contact form. Instantly, n8n:
+- Creates a Slack notification
+- Adds them to a Google Sheet
+- Sends them a welcome email
+- Tags them in your CRM
+
+[PAUSE: 1200ms]
+
+All automatically. While you sleep.
+
+[PAUSE: 800ms]
+
+Or you're an e-commerce founder. N8N automatically:
+- Captures customer orders
+- Pulls product data from your inventory
+- Updates your email list
+- Generates invoices
+- Syncs everything to your accounting software
+
+[PAUSE: 1200ms]
+
+Or you're building an AI-powered business. N8N becomes your AI orchestrator:
+- Takes customer input
+- Calls Claude API for intelligent responses
+- Stores results in your database
+- Sends personalized outputs back to customers
+
+[PAUSE: 1300ms]
+
+Companies are building $4,200 per month automation agencies entirely on n8n.
+
+[PAUSE: 1200ms]
+
+---
+
+[SECTION 4: GETTING STARTED - 150-170 seconds]
+
+Getting started is simple.
+
+[PAUSE: 800ms]
+
+Visit n8n.io, sign up for free, and you're in their cloud version instantly. Or download and self-host on AWS, Docker, or your own server.
+
+[PAUSE: 1200ms]
+
+The interface is intuitive - even non-technical people can build powerful workflows in minutes.
+
+[PAUSE: 800ms]
+
+---
+
+[CLOSING - 170-180 seconds]
+
+N8N is the automation tool for people who want power without complexity.
+
+[PAUSE: 1000ms]
+
+If you're tired of paying subscription fees for automation or manually doing repetitive tasks, n8n is your answer.
+
+[PAUSE: 1200ms]
+
+Start automating today. Your business will thank you tomorrow.
+
+[PAUSE: 1000ms]
+
+Let's build the future together.
+
+---
+
+[END]
+
+Total Duration: ~3 minutes (180 seconds)
+Word Count: ~850 words

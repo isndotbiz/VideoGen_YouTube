@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-12-23T20:15:47.587323",
+  "session_file": "epidemic_session.json",
+  "test_prompt_length": 343,
+  "urls_tested": 4,
+  "total_input_fields_found": 2,
+  "findings_by_url": [
+    {
+      "url": "https://www.epidemicsound.com/discover/",
+      "url_name": "discover",
+      "timestamp": "2025-12-23T20:14:54.185500",
+      "input_fields": [],
+      "ai_search_found": false,
+      "ai_search_selector": null,
+      "can_accept_long_prompts": false,
+      "screenshots": [
+        "agent_a_screenshots\\01_discover_initial.png"
+      ]
+    },
+    {
+      "url": "https://www.epidemicsound.com/music/search/",
+      "url_name": "search",
+      "timestamp": "2025-12-23T20:15:09.211524",
+      "input_fields": [
+        {
+          "index": 1,
+          "selector": "input[type='search']",
+          "tag": "input",
+          "type": "search",
+          "placeholder": null,
+          "aria_label": null,
+          "role": null,
+          "id": "Search-by-mood,-genre,-reference-track,-and-more2",
+          "name": null,
+          "class": "no-default-focus _textInputBase_qt7uj_142 es-text-m es-color-text-primary _inputHideLabel_qt7uj_202",
+          "parent_text": "Search by mood, genre, reference track, and more",
+          "accepts_long_prompts": false,
+          "triggers_search": true,
+          "error": "'charmap' codec can't encode character '\\u2713' in position 15: character maps to <undefined>",
+          "screenshot": "agent_a_screenshots\\02_search_input_01.png"
+        },
+        {
+          "index": 2,
+          "selector": "input:not([type='hidden']):not([type='submit']):not([type='button'])",
+          "tag": "input",
+          "type": "search",
+          "placeholder": null,
+          "aria_label": null,
+          "role": null,
+          "id": "Search-by-mood,-genre,-reference-track,-and-more2",
+          "name": null,
+          "class": "no-default-focus _textInputBase_qt7uj_142 es-text-m es-color-text-primary _inputHideLabel_qt7uj_202 _filled_qt7uj_183",
+          "parent_text": "Search by mood, genre, reference track, and more",
+          "accepts_long_prompts": false,
+          "triggers_search": true,
+          "error": "'charmap' codec can't encode character '\\u2713' in position 15: character maps to <undefined>",
+          "screenshot": "agent_a_screenshots\\02_search_input_02.png"
+        }
+      ],
+      "ai_search_found": false,
+      "ai_search_selector": null,
+      "can_accept_long_prompts": false,
+      "screenshots": [
+        "agent_a_screenshots\\02_search_initial.png"
+      ]
+    },
+    {
+      "url": "https://www.epidemicsound.com/music/discover/",
+      "url_name": "discover",
+      "timestamp": "2025-12-23T20:15:29.219293",
+      "input_fields": [],
+      "ai_search_found": false,
+      "ai_search_selector": null,
+      "can_accept_long_prompts": false,
+      "screenshots": [
+        "agent_a_screenshots\\03_discover_initial.png"
+      ]
+    },
+    {
+      "url": "https://www.epidemicsound.com/",
+      "url_name": "www.epidemicsound.com",
+      "timestamp": "2025-12-23T20:15:38.147465",
+      "input_fields": [],
+      "ai_search_found": false,
+      "ai_search_selector": null,
+      "can_accept_long_prompts": false,
+      "screenshots": [
+        "agent_a_screenshots\\04_www.epidemicsound.com_initial.png"
+      ]
+    }
+  ],
+  "ai_search_locations": []
+}

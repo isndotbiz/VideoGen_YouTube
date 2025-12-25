@@ -1,0 +1,227 @@
+{
+  "analysis_date": "2025-12-25T12:39:15.048872",
+  "10_days": {
+    "count": 3,
+    "files": [
+      {
+        "path": "D:\\workspace\\VideoGen_YouTube\\output\\final_video_subbed.mp4",
+        "name": "final_video_subbed.mp4",
+        "last_access": "2025-12-13T13:18:57.733067",
+        "days_since_access": 11,
+        "extension": ".mp4",
+        "size_bytes": 0
+      },
+      {
+        "path": "D:\\workspace\\VideoGen_YouTube\\kill_processes.txt",
+        "name": "kill_processes.txt",
+        "last_access": "2025-12-13T20:39:16.983913",
+        "days_since_access": 11,
+        "extension": ".txt",
+        "size_bytes": 0
+      },
+      {
+        "path": "D:\\workspace\\VideoGen_YouTube\\output\\free-ai-tools-animations\\fal_ai_batch_commands.sh",
+        "name": "fal_ai_batch_commands.sh",
+        "last_access": "2025-12-14T01:06:41.587148",
+        "days_since_access": 11,
+        "extension": ".sh",
+        "size_bytes": 0
+      }
+    ]
+  },
+  "30_days": {
+    "count": 1,
+    "files": [
+      {
+        "path": "D:\\workspace\\VideoGen_YouTube\\output\\nul",
+        "name": "nul",
+        "last_access": "1969-12-31T16:00:00",
+        "days_since_access": 20447,
+        "extension": "no_extension",
+        "size_bytes": 0
+      }
+    ]
+  },
+  "by_extension": {
+    ".example": {
+      "total": 3,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".local": {
+      "total": 1,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    "no_extension": {
+      "total": 2,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 1,
+      "files": [
+        {
+          "path": "D:\\workspace\\VideoGen_YouTube\\output\\nul",
+          "name": "nul",
+          "last_access": "1969-12-31T16:00:00",
+          "days_since_access": 20447,
+          "extension": "no_extension",
+          "size_bytes": 0
+        }
+      ]
+    },
+    ".txt": {
+      "total": 72,
+      "not_accessed_10d": 1,
+      "not_accessed_30d": 0,
+      "files": [
+        {
+          "path": "D:\\workspace\\VideoGen_YouTube\\kill_processes.txt",
+          "name": "kill_processes.txt",
+          "last_access": "2025-12-13T20:39:16.983913",
+          "days_since_access": 11,
+          "extension": ".txt",
+          "size_bytes": 0
+        }
+      ]
+    },
+    ".md": {
+      "total": 261,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".py": {
+      "total": 277,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".sh": {
+      "total": 9,
+      "not_accessed_10d": 1,
+      "not_accessed_30d": 0,
+      "files": [
+        {
+          "path": "D:\\workspace\\VideoGen_YouTube\\output\\free-ai-tools-animations\\fal_ai_batch_commands.sh",
+          "name": "fal_ai_batch_commands.sh",
+          "last_access": "2025-12-14T01:06:41.587148",
+          "days_since_access": 11,
+          "extension": ".sh",
+          "size_bytes": 0
+        }
+      ]
+    },
+    ".bat": {
+      "total": 6,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".cmd": {
+      "total": 1,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".js": {
+      "total": 28,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".json": {
+      "total": 109,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".log": {
+      "total": 30,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".svg": {
+      "total": 6,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".jsonl": {
+      "total": 7,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".cleaned": {
+      "total": 1,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".pickle": {
+      "total": 1,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".png": {
+      "total": 7022,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".mp3": {
+      "total": 323,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".wav": {
+      "total": 42,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".crdownload": {
+      "total": 3,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".mp4": {
+      "total": 233,
+      "not_accessed_10d": 1,
+      "not_accessed_30d": 0,
+      "files": [
+        {
+          "path": "D:\\workspace\\VideoGen_YouTube\\output\\final_video_subbed.mp4",
+          "name": "final_video_subbed.mp4",
+          "last_access": "2025-12-13T13:18:57.733067",
+          "days_since_access": 11,
+          "extension": ".mp4",
+          "size_bytes": 0
+        }
+      ]
+    },
+    ".srt": {
+      "total": 24,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".jpg": {
+      "total": 38,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    },
+    ".vtt": {
+      "total": 1,
+      "not_accessed_10d": 0,
+      "not_accessed_30d": 0,
+      "files": []
+    }
+  }
+}

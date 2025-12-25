@@ -1,0 +1,56 @@
+{
+  "cleanup_date": "2025-12-25T12:41:37.386600",
+  "dry_run": true,
+  "skip_recent_hours": 24,
+  "summary": {
+    "deleted_count": 7,
+    "skipped_count": 0,
+    "error_count": 0
+  },
+  "deleted_files": [
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\epidemic_downloader.log",
+      "last_access": "2025-12-23T01:28:07.396967",
+      "days_since_access": 2,
+      "deleted_at": "2025-12-25T12:41:37.386600"
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\kill_processes.txt",
+      "last_access": "2025-12-13T20:39:16.983913",
+      "days_since_access": 11,
+      "deleted_at": "2025-12-25T12:41:37.386600"
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\YOUTUBE_UPLOAD_INSTRUCTIONS.txt",
+      "last_access": "2025-12-18T09:40:39.616959",
+      "days_since_access": 7,
+      "deleted_at": "2025-12-25T12:41:37.386600"
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\final_video_subbed.mp4",
+      "last_access": "2025-12-13T13:18:57.733067",
+      "days_since_access": 11,
+      "deleted_at": "2025-12-25T12:41:37.386600"
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\nul",
+      "last_access": "1969-12-31T16:00:00",
+      "days_since_access": 20447,
+      "deleted_at": "2025-12-25T12:41:37.386600"
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\video_with_music.mp4",
+      "last_access": "2025-12-16T23:06:36.282862",
+      "days_since_access": 8,
+      "deleted_at": "2025-12-25T12:41:37.386600"
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\free-ai-tools-animations\\fal_ai_batch_commands.sh",
+      "last_access": "2025-12-14T01:06:41.587148",
+      "days_since_access": 11,
+      "deleted_at": "2025-12-25T12:41:37.386600"
+    }
+  ],
+  "skipped_files": [],
+  "errors": []
+}

@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-12-23T06:08:53.819275",
+  "total_attempted": 10,
+  "successful": 10,
+  "failed": 0,
+  "downloads": [
+    {
+      "index": 1,
+      "platform": "youtube_calm",
+      "mood": "calm",
+      "bpm_range": "60-80",
+      "filename": "youtube_calm_calm_01.mp3",
+      "path": "background_music_epidemic\\batch_download\\youtube_calm\\youtube_calm_calm_01.mp3",
+      "size_mb": 5.03,
+      "original_name": "ES_Leave This Place - Hallmore.mp3"
+    },
+    {
+      "index": 2,
+      "platform": "youtube_calm",
+      "mood": "peaceful",
+      "bpm_range": "60-80",
+      "filename": "youtube_calm_peaceful_02.mp3",
+      "path": "background_music_epidemic\\batch_download\\youtube_calm\\youtube_calm_peaceful_02.mp3",
+      "size_mb": 5.67,
+      "original_name": "ES_We Get Deep - Marcus Price.mp3"
+    },
+    {
+      "index": 3,
+      "platform": "youtube_calm",
+      "mood": "ambient",
+      "bpm_range": "60-80",
+      "filename": "youtube_calm_ambient_03.mp3",
+      "path": "background_music_epidemic\\batch_download\\youtube_calm\\youtube_calm_ambient_03.mp3",
+      "size_mb": 6.14,
+      "original_name": "ES_stickerbomb - Heyson.mp3"
+    },
+    {
+      "index": 4,
+      "platform": "youtube_energetic",
+      "mood": "energetic",
+      "bpm_range": "120-140",
+      "filename": "youtube_energetic_energetic_04.mp3",
+      "path": "background_music_epidemic\\batch_download\\youtube_energetic\\youtube_energetic_energetic_04.mp3",
+      "size_mb": 6.62,
+      "original_name": "ES_Push It Higher - Cackie Jhen.mp3"
+    },
+    {
+      "index": 5,
+      "platform": "youtube_energetic",
+      "mood": "uplifting",
+      "bpm_range": "120-140",
+      "filename": "youtube_energetic_uplifting_05.mp3",
+      "path": "background_music_epidemic\\batch_download\\youtube_energetic\\youtube_energetic_uplifting_05.mp3",
+      "size_mb": 5.67,
+      "original_name": "ES_Werk - Cackie Jhen.mp3"
+    },
+    {
+      "index": 6,
+      "platform": "youtube_energetic",
+      "mood": "upbeat",
+      "bpm_range": "120-140",
+      "filename": "youtube_energetic_upbeat_06.mp3",
+      "path": "background_music_epidemic\\batch_download\\youtube_energetic\\youtube_energetic_upbeat_06.mp3",
+      "size_mb": 7.21,
+      "original_name": "ES_Reason - T-Shirts & Sweats.mp3"
+    },
+    {
+      "index": 7,
+      "platform": "tiktok_high_energy",
+      "mood": "energetic",
+      "bpm_range": "140-160",
+      "filename": "tiktok_high_energy_energetic_07.mp3",
+      "path": "background_music_epidemic\\batch_download\\tiktok_high_energy\\tiktok_high_energy_energetic_07.mp3",
+      "size_mb": 5.77,
+      "original_name": "ES_Afterglow - Zorro.mp3"
+    },
+    {
+      "index": 8,
+      "platform": "instagram_fitness",
+      "mood": "energetic",
+      "bpm_range": "130-150",
+      "filename": "instagram_fitness_energetic_08.mp3",
+      "path": "background_music_epidemic\\batch_download\\instagram_fitness\\instagram_fitness_energetic_08.mp3",
+      "size_mb": 5.75,
+      "original_name": "ES_Afterglow (Instrumental Version) - Zorro.mp3"
+    },
+    {
+      "index": 9,
+      "platform": "instagram_beauty",
+      "mood": "elegant",
+      "bpm_range": "90-120",
+      "filename": "instagram_beauty_elegant_09.mp3",
+      "path": "background_music_epidemic\\batch_download\\instagram_beauty\\instagram_beauty_elegant_09.mp3",
+      "size_mb": 4.88,
+      "original_name": "ES_The Scent of Passion - DEX 1200.mp3"
+    },
+    {
+      "index": 10,
+      "platform": "instagram_travel",
+      "mood": "cinematic",
+      "bpm_range": "80-110",
+      "filename": "instagram_travel_cinematic_10.mp3",
+      "path": "background_music_epidemic\\batch_download\\instagram_travel\\instagram_travel_cinematic_10.mp3",
+      "size_mb": 5.55,
+      "original_name": "ES_Synthetic - Hampus Naeselius.mp3"
+    }
+  ],
+  "failures": []
+}

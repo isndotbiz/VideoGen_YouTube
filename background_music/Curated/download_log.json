@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-23T00:23:17.341228",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "twitter"
+  ],
+  "quick_mode": true,
+  "total_processed": 0,
+  "successful": 0,
+  "failed": 0,
+  "results": []
+}

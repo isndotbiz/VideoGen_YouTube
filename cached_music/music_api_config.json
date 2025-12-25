@@ -1,0 +1,40 @@
+{
+  "free_sources": {
+    "freepd": {
+      "site": "https://freepd.com/",
+      "best_for": "Educational/motivational videos",
+      "categories": {
+        "uplifting": "https://freepd.com/?s=uplifting",
+        "motivational": "https://freepd.com/?s=motivational",
+        "background": "https://freepd.com/?s=background",
+        "ambient": "https://freepd.com/?s=ambient"
+      }
+    },
+    "pixabay": {
+      "site": "https://pixabay.com/music/",
+      "api": "https://pixabay.com/api/",
+      "get_key": "https://pixabay.com/accounts/register/",
+      "note": "Free key, commercial use OK"
+    },
+    "youtube_audio_library": {
+      "site": "https://www.youtube.com/audiolibrary",
+      "note": "Requires YouTube account",
+      "advantage": "Already optimized for videos",
+      "license": "Creative Commons"
+    }
+  },
+  "paid_services": {
+    "epidemic_sound": {
+      "monthly": 9.99,
+      "api": "Yes",
+      "annual": 99.99,
+      "unlimited": true
+    },
+    "artlist": {
+      "monthly": 14.99,
+      "api": "Yes",
+      "annual": 149.99,
+      "unlimited": true
+    }
+  }
+}

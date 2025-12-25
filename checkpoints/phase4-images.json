@@ -1,0 +1,37 @@
+{
+  "prompts": {
+    "photorealistic": [
+      {
+        "id": "flux_0",
+        "section": "Professional Setup",
+        "prompt": "Professional workspace with dual monitors, ergonomic setup, modern office environment.\nStyle: Photorealistic, cinematic, professional photography, 4K.\nMood: Professional, productive, organized."
+      },
+      {
+        "id": "flux_1",
+        "section": "Team Collaboration",
+        "prompt": "Diverse team collaborating around a desk with laptops and notebooks.\nStyle: Photorealistic, candid, professional, 4K.\nMood: Collaborative, engaged, professional."
+      },
+      {
+        "id": "flux_2",
+        "section": "Working Professional",
+        "prompt": "Professional person at desk typing on keyboard with focused expression.\nStyle: Photorealistic, detailed, professional photography, 4K.\nMood: Focused, productive, expert."
+      }
+    ],
+    "textbased": [
+      {
+        "id": "nano_0",
+        "section": "Key Points Summary",
+        "prompt": "Clean infographic with 3-4 key bullet points.\nStyle: Professional, minimalist design, high contrast.\nElements: Icons, text labels (28pt+), checkmarks.\nColor: Professional blue and white.\nLayout: Vertical, centered, organized.\nExclude: Photos, people, realistic imagery.",
+        "has_data": false
+      },
+      {
+        "id": "nano_1",
+        "section": "Statistics & Data",
+        "prompt": "Professional data visualization with charts and metrics.\nStyle: Clean, modern, data-driven.\nElements: Bar charts, percentages, number displays.\nColor: Professional palette with accent colors.\nText: Clear labels, readable fonts (24pt+).\nLayout: Balanced, easy to read.\nExclude: Photos, people, gradients.",
+        "has_data": true
+      }
+    ],
+    "total": 5
+  },
+  "cost": 0.21
+}

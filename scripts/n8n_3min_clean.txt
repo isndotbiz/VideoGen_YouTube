@@ -1,0 +1,23 @@
+Welcome to N8N. The free, open-source workflow automation platform that's changing how businesses operate.
+
+N8N connects over 400 apps and services without requiring a single line of code. Connect your Gmail to your CRM. Sync your e-commerce orders to your accounting software. Process customer data automatically. The possibilities are endless.
+
+But here's what makes N8N different from other automation tools. First, it's completely free and open-source. No monthly subscriptions. No vendor lock-in. You can self-host it on your own servers, meaning your data stays private and under your control.
+
+Second, with over 400 integrations, N8N covers nearly every business tool you use. Gmail, Slack, HubSpot, Salesforce, AWS, Google Sheets, Stripe, Zapier, and hundreds more. If it has an API, N8N can probably connect to it.
+
+Third, N8N scales from simple automations to complex, enterprise-level workflows. Start with a basic task like sending a Slack notification when you receive a form submission. Then build complex AI-powered workflows that process thousands of transactions daily.
+
+Let me show you a real example. Imagine you run a small agency. A customer fills out your contact form. Instantly, N8N captures their information, adds them to your CRM, sends them a welcome email, posts a notification to your team Slack channel, and logs everything in your database. All automatically. While you sleep.
+
+Or you're running an e-commerce business. When a customer places an order, N8N automatically pulls the order data, updates your inventory, generates an invoice, sends a confirmation email, and syncs everything to your accounting software. No manual work. No errors.
+
+Because N8N is open-source and self-hosted, teams are building profitable automation agencies entirely on N8N. Some are generating over four thousand dollars per month, automating workflows for other businesses.
+
+Getting started is simple. Visit n8n.io and sign up for free. You can use their cloud version instantly, or download and self-host on Docker, AWS, or your own server. The no-code interface is intuitive. Even non-technical people can build powerful workflows in minutes.
+
+The automation landscape has changed. Expensive tools like Zapier or Make are becoming obsolete. N8N represents the future: free, powerful, self-hosted workflow automation for businesses of all sizes.
+
+Stop doing repetitive tasks manually. Stop paying subscription fees for automation. Start building with N8N today. Your business will thank you tomorrow.
+
+Visit n8n.io now.

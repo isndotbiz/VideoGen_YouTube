@@ -1,0 +1,265 @@
+{
+  "analysis_date": "2025-12-25T12:39:56.615967",
+  "summary": {
+    "empty_files_count": 7,
+    "old_10d_count": 3,
+    "old_30d_count": 1
+  },
+  "empty_files": [
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\epidemic_downloader.log",
+      "name": "epidemic_downloader.log",
+      "extension": ".log",
+      "last_access": "2025-12-23T01:28:07.396967",
+      "days_since_access": 2
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\final_video_subbed.mp4",
+      "name": "final_video_subbed.mp4",
+      "extension": ".mp4",
+      "last_access": "2025-12-13T13:18:57.733067",
+      "days_since_access": 11
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\video_with_music.mp4",
+      "name": "video_with_music.mp4",
+      "extension": ".mp4",
+      "last_access": "2025-12-16T23:06:36.282862",
+      "days_since_access": 8
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\free-ai-tools-animations\\fal_ai_batch_commands.sh",
+      "name": "fal_ai_batch_commands.sh",
+      "extension": ".sh",
+      "last_access": "2025-12-14T01:06:41.587148",
+      "days_since_access": 11
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\kill_processes.txt",
+      "name": "kill_processes.txt",
+      "extension": ".txt",
+      "last_access": "2025-12-13T20:39:16.983913",
+      "days_since_access": 11
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\YOUTUBE_UPLOAD_INSTRUCTIONS.txt",
+      "name": "YOUTUBE_UPLOAD_INSTRUCTIONS.txt",
+      "extension": ".txt",
+      "last_access": "2025-12-18T09:40:39.616959",
+      "days_since_access": 7
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\nul",
+      "name": "nul",
+      "extension": "no_extension",
+      "last_access": "1969-12-31T16:00:00",
+      "days_since_access": 20447
+    }
+  ],
+  "old_files_10d": [
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\kill_processes.txt",
+      "name": "kill_processes.txt",
+      "extension": ".txt",
+      "last_access": "2025-12-13T20:39:16.983913",
+      "days_since_access": 11,
+      "size_bytes": 0
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\final_video_subbed.mp4",
+      "name": "final_video_subbed.mp4",
+      "extension": ".mp4",
+      "last_access": "2025-12-13T13:18:57.733067",
+      "days_since_access": 11,
+      "size_bytes": 0
+    },
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\free-ai-tools-animations\\fal_ai_batch_commands.sh",
+      "name": "fal_ai_batch_commands.sh",
+      "extension": ".sh",
+      "last_access": "2025-12-14T01:06:41.587148",
+      "days_since_access": 11,
+      "size_bytes": 0
+    }
+  ],
+  "old_files_30d": [
+    {
+      "path": "D:\\workspace\\VideoGen_YouTube\\output\\nul",
+      "name": "nul",
+      "extension": "no_extension",
+      "last_access": "1969-12-31T16:00:00",
+      "days_since_access": 20447,
+      "size_bytes": 0
+    }
+  ],
+  "file_stats": {
+    ".example": {
+      "count": 3,
+      "empty_count": 0,
+      "total_size": 5698,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".local": {
+      "count": 1,
+      "empty_count": 0,
+      "total_size": 8419,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    "no_extension": {
+      "count": 2,
+      "empty_count": 1,
+      "total_size": 4867,
+      "old_10d": 0,
+      "old_30d": 1
+    },
+    ".txt": {
+      "count": 72,
+      "empty_count": 2,
+      "total_size": 491011,
+      "old_10d": 1,
+      "old_30d": 0
+    },
+    ".md": {
+      "count": 261,
+      "empty_count": 0,
+      "total_size": 2716511,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".py": {
+      "count": 278,
+      "empty_count": 0,
+      "total_size": 2789963,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".sh": {
+      "count": 9,
+      "empty_count": 1,
+      "total_size": 20351,
+      "old_10d": 1,
+      "old_30d": 0
+    },
+    ".bat": {
+      "count": 6,
+      "empty_count": 0,
+      "total_size": 11282,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".cmd": {
+      "count": 1,
+      "empty_count": 0,
+      "total_size": 778,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".js": {
+      "count": 28,
+      "empty_count": 0,
+      "total_size": 273486,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".json": {
+      "count": 110,
+      "empty_count": 0,
+      "total_size": 553535,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".log": {
+      "count": 30,
+      "empty_count": 1,
+      "total_size": 361059,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".svg": {
+      "count": 6,
+      "empty_count": 0,
+      "total_size": 4637,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".jsonl": {
+      "count": 7,
+      "empty_count": 0,
+      "total_size": 101345,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".cleaned": {
+      "count": 1,
+      "empty_count": 0,
+      "total_size": 22278,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".pickle": {
+      "count": 1,
+      "empty_count": 0,
+      "total_size": 1025,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".png": {
+      "count": 7022,
+      "empty_count": 0,
+      "total_size": 10578379765,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".mp3": {
+      "count": 323,
+      "empty_count": 0,
+      "total_size": 1229258054,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".wav": {
+      "count": 42,
+      "empty_count": 0,
+      "total_size": 946625036,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".crdownload": {
+      "count": 3,
+      "empty_count": 0,
+      "total_size": 12970813,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".mp4": {
+      "count": 233,
+      "empty_count": 2,
+      "total_size": 1321433563,
+      "old_10d": 1,
+      "old_30d": 0
+    },
+    ".srt": {
+      "count": 24,
+      "empty_count": 0,
+      "total_size": 76453,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".jpg": {
+      "count": 38,
+      "empty_count": 0,
+      "total_size": 6103820,
+      "old_10d": 0,
+      "old_30d": 0
+    },
+    ".vtt": {
+      "count": 1,
+      "empty_count": 0,
+      "total_size": 2618,
+      "old_10d": 0,
+      "old_30d": 0
+    }
+  }
+}

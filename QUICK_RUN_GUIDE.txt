@@ -1,0 +1,170 @@
+================================================================================
+                    QUICK RUN GUIDE - 30 SECOND TEST VIDEO
+================================================================================
+
+WHAT YOU NEED: 2 minutes setup, 15 minutes to create video
+
+================================================================================
+
+SETUP (One time)
+
+1. Set environment variables:
+
+   Windows Command Prompt:
+     set ELEVENLABS_API_KEY=your_key_here
+     set ASSEMBLYAI_API_KEY=your_key_here
+
+   Windows PowerShell:
+     $env:ELEVENLABS_API_KEY = "your_key_here"
+     $env:ASSEMBLYAI_API_KEY = "your_key_here"
+
+   Linux/Mac:
+     export ELEVENLABS_API_KEY="your_key_here"
+     export ASSEMBLYAI_API_KEY="your_key_here"
+
+2. Verify you have:
+   - ffmpeg installed
+   - ffprobe installed
+   - Python 3.7+
+   - elevenlabs library (pip install elevenlabs)
+
+================================================================================
+
+RUN THE SCRIPT
+
+cd /d/workspace/VideoGen_YouTube
+
+python create_full_30sec_test_video.py
+
+That's it. Watch the console output for progress.
+
+================================================================================
+
+WHAT HAPPENS (Step by step)
+
+[1] Generate narration (ElevenLabs TTS)
+    Reads: ELEVENLABS_CLEAN_NARRATION_30SEC.txt
+    Creates: narration_test_30sec.mp3 (2.3 MB)
+
+[2] Prepare animations
+    Uses: Existing animation files (if available)
+    Fallback: Black background
+
+[3] Get background music
+    Looks for: pexels_ambient_bgm.mp3
+    Volume: 40% (underneath narration)
+
+[4] Generate subtitles
+    Uses: AssemblyAI speech-to-text
+    Creates: subtitles_test_30sec.srt
+
+[5] Create Shotstack config
+    Format: JSON configuration
+    Format: 1920x1080, 30 seconds, H.264
+
+[6] Compose video
+    Tool: FFmpeg (free, fast)
+    Creates: video_test_30sec.mp4 (4-5 MB)
+
+[7] Add YouTube SEO metadata
+    Title: "The 8 Best Free AI Tools - 30 Second Test"
+    Tags: AI tools, ChatGPT, Midjourney, etc.
+    Privacy: PRIVATE (for testing)
+
+[8] Verify quality
+    Checks: File size, duration, codecs
+    Status: Ready for YouTube
+
+[9] YouTube upload (optional)
+    Shows: Command to upload
+
+Total time: ~15-20 minutes
+
+================================================================================
+
+WATCH THE VIDEO
+
+ffplay output/video_test_30sec.mp4
+
+Or open: output/video_test_30sec.mp4 with any media player
+
+================================================================================
+
+VERIFY QUALITY
+
+Check:
+  ✓ Narration is clear and 30 seconds
+  ✓ Background music is quiet (40% volume)
+  ✓ Subtitles match narration
+  ✓ Video plays smoothly
+  ✓ No audio issues or glitches
+
+================================================================================
+
+UPLOAD TO YOUTUBE
+
+Option 1: Use youtube-upload tool
+  pip install youtube-upload
+  youtube-upload \
+    --title "The 8 Best Free AI Tools - 30 Second Test" \
+    --description "Test video..." \
+    --keywords "AI tools, ChatGPT" \
+    --privacy private \
+    output/video_test_30sec.mp4
+
+Option 2: Manual upload
+  1. Go to https://www.youtube.com/upload
+  2. Select: output/video_test_30sec.mp4
+  3. Title: "The 8 Best Free AI Tools - 30 Second Test"
+  4. Description: "Test video..."
+  5. Tags: AI tools, ChatGPT, Midjourney, etc.
+  6. Privacy: PRIVATE (for testing)
+  7. Upload
+
+================================================================================
+
+COSTS
+
+Minimum (narration + subtitles only):
+  ElevenLabs: $0.03
+  AssemblyAI: $0.01
+  Total: $0.04
+
+Full (with animations):
+  ElevenLabs: $0.03
+  FAL.ai: $2.00
+  AssemblyAI: $0.01
+  Total: $2.04
+
+================================================================================
+
+OUTPUT FILES
+
+After running, you'll have:
+
+output/
+├── narration_test_30sec.mp3        (Narration, 2.3 MB)
+├── subtitles_test_30sec.srt        (Subtitles, 3.6 KB)
+├── shotstack_config_test_30sec.json (Config, 1.5 KB)
+└── video_test_30sec.mp4            (FINAL VIDEO, 4-5 MB) ✓
+
+================================================================================
+
+NEXT STEPS
+
+1. Run script
+2. Watch video
+3. Verify quality
+4. Test upload to YouTube (private)
+5. If good: scale to longer videos or batch processing
+6. If issues: fix and re-run
+
+================================================================================
+
+THAT'S IT!
+
+python create_full_30sec_test_video.py
+
+Everything else is automated. 🚀
+
+================================================================================

@@ -1,0 +1,20 @@
+N8N - 30 SECOND QUICK INTRO
+
+Welcome to N8N. The free, open-source workflow automation platform that connects over 400 apps without writing any code.
+
+[PAUSE: 500ms]
+
+Automate your entire business. From customer contacts to data processing. Self-host it. Keep your data private.
+
+[PAUSE: 500ms]
+
+N8N. Automation made simple.
+
+[PAUSE: 500ms]
+
+Visit n8n.io
+
+---
+
+Total Duration: 30 seconds
+Word Count: ~70 words

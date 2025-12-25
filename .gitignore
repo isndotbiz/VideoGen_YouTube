@@ -311,3 +311,6 @@ settings.local.json
 !.gitattributes
 !README.md
 !LICENSE
+_archive/
+*.pyc
+__pycache__/

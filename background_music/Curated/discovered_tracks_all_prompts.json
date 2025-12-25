@@ -1,0 +1,182 @@
+[
+  {
+    "prompt_set": "1_electronic_tech",
+    "prompt": "electronic instrumental background music for tech tutorials chillstep minimal techno 110-130 BPM energetic modern no vocals",
+    "track_count": 11,
+    "tracks": [
+      "Slow Decay (Instrumental Version)",
+      "Moon Traffic",
+      "Sick And Tired (Instrumental Version)",
+      "Tell You I'm Sorry (Instrumental Version)",
+      "Safe n' Sound",
+      "Dive In",
+      "Indigene",
+      "Knobs",
+      "Bad Attire (Late Yungin Remix) (Instrumental Version)",
+      "Project X",
+      "Sidechainers"
+    ]
+  },
+  {
+    "prompt_set": "2_electronic_synthwave",
+    "prompt": "electronic instrumental synthwave minimal techno future bass 110-130 BPM clean futuristic no vocals",
+    "track_count": 11,
+    "tracks": [
+      "I Like Your Suit",
+      "Bad Attire (Late Yungin Remix) (Instrumental Version)",
+      "I Told You",
+      "Electronic Avalanche",
+      "Semiphonic",
+      "Never As Lonely (Instrumental Version)",
+      "Dreamwalking",
+      "Hey Chief",
+      "Premonition",
+      "Dive In",
+      "Surrounded by Bubbles"
+    ]
+  },
+  {
+    "prompt_set": "3_electronic_ambient",
+    "prompt": "ambient electronic instrumental for tutorials chillstep downtempo 110-130 BPM atmospheric modern no vocals",
+    "track_count": 11,
+    "tracks": [
+      "Diffuser",
+      "Amphibian",
+      "Video Hand",
+      "Veil of Dew",
+      "Rhythm of Dreams",
+      "Daydreamer",
+      "Wander",
+      "Cerulean Shade",
+      "Multicolor",
+      "Maybe This Time",
+      "Florescence"
+    ]
+  },
+  {
+    "prompt_set": "4_electronic_minimal",
+    "prompt": "minimal electronic instrumental techno house 110-130 BPM steady rhythm no vocals background music",
+    "track_count": 11,
+    "tracks": [
+      "Vibrations From You",
+      "Rooftops",
+      "Gum Arabic",
+      "Made in Amsterdam",
+      "Amygdala",
+      "Keyless Mind",
+      "Peel",
+      "Chez Moi",
+      "A Day Outside",
+      "Munch",
+      "Electronic Avalanche"
+    ]
+  },
+  {
+    "prompt_set": "5_cinematic_orchestral",
+    "prompt": "cinematic orchestral instrumental modern epic ambient 60-90 BPM inspiring atmospheric no vocals",
+    "track_count": 11,
+    "tracks": [
+      "Remain",
+      "Dark Turns to Light",
+      "Dreams of Us",
+      "Giants",
+      "Dissemination",
+      "Hope and a Future",
+      "Lantern",
+      "Breathe One's Last",
+      "Arcane Happenings",
+      "States",
+      "Over the Ocean"
+    ]
+  },
+  {
+    "prompt_set": "6_upbeat_corporate",
+    "prompt": "upbeat corporate pop indie folk acoustic 120-140 BPM positive motivational instrumental bright",
+    "track_count": 11,
+    "tracks": [
+      "Flying Kites",
+      "Kings and Queens (Instrumental Version)",
+      "Are You Having Fun",
+      "Get Over Here",
+      "It's You Again (Instrumental Version)",
+      "The Sweetest Love (Instrumental Version)",
+      "Rope Swing",
+      "Nicer (Instrumental Version)",
+      "Racing for Life (Instrumental Version)",
+      "Talking Tonight",
+      "Each Day (Instrumental Version)"
+    ]
+  },
+  {
+    "prompt_set": "7_calm_ambient",
+    "prompt": "calm ambient meditation soft piano acoustic 40-70 BPM peaceful tranquil instrumental minimal",
+    "track_count": 11,
+    "tracks": [
+      "Water Lilies",
+      "Diamond",
+      "Over the Clouds",
+      "Lone Thought",
+      "Bookmarks",
+      "Lupine (Scaled Down Version)",
+      "Girl with Balloon",
+      "Little Kid",
+      "A Calm Early Morning",
+      "Velvet Uniform",
+      "Light in the Mist"
+    ]
+  },
+  {
+    "prompt_set": "8_corporate_minimal",
+    "prompt": "corporate professional minimal piano soft tech 90-110 BPM clean modern instrumental unobtrusive",
+    "track_count": 11,
+    "tracks": [
+      "Axon Terminal",
+      "Rich (Instrumental Version)",
+      "The Enchanted Princess",
+      "We Lift This",
+      "Malin's Song",
+      "Random Acts of Kindness",
+      "Dawncaller",
+      "Hangscapes 4",
+      "I See Blue",
+      "Up Up Away",
+      "Tomtebo"
+    ]
+  },
+  {
+    "prompt_set": "9_lofi_indie",
+    "prompt": "lofi indie acoustic hip hop 80-120 BPM warm casual instrumental vlog coffee shop",
+    "track_count": 11,
+    "tracks": [
+      "roadworn",
+      "Buenos Dias",
+      "lofi del pueblo",
+      "Glad U Made It",
+      "Pick Up Your Phone Please",
+      "Trouble Sleeping",
+      "Memoirs (Instrumental Version)",
+      "little thoughts",
+      "Another Christmas Alone",
+      "Turning over a New Leaf",
+      "Meet Me on the Moon"
+    ]
+  },
+  {
+    "prompt_set": "10_gaming_synthwave",
+    "prompt": "synthwave trap gaming electronic 130-160 BPM energetic intense instrumental action",
+    "track_count": 11,
+    "tracks": [
+      "Instinct",
+      "Bulldoze",
+      "Rage Bait",
+      "Swing",
+      "Vengeance",
+      "Bankteller",
+      "Razor Sharp",
+      "Golden Gate",
+      "Dead Bells",
+      "Ringout",
+      "Mach 10"
+    ]
+  }
+]

@@ -1,0 +1,269 @@
+{
+  "timestamp": "2025-12-23T15:10:42.017403",
+  "total_sets": 4,
+  "tracks_per_set": 6,
+  "total_expected": 24,
+  "successful": 24,
+  "failed": 0,
+  "downloads": [
+    {
+      "set": "option1_energy_consistency",
+      "set_index": 1,
+      "track_index": 1,
+      "filename": "option1_energy_consistency_track_01.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option1_energy_consistency\\option1_energy_consistency_track_01.mp3",
+      "size_mb": 5.55,
+      "url": "https://www.epidemicsound.com/music/tracks/756ef7c3-23a8-45c4-8a79-a1177ebc26df/",
+      "original_name": "ES_Synthetic - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option1_energy_consistency",
+      "set_index": 1,
+      "track_index": 2,
+      "filename": "option1_energy_consistency_track_02.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option1_energy_consistency\\option1_energy_consistency_track_02.mp3",
+      "size_mb": 5.29,
+      "url": "https://www.epidemicsound.com/music/tracks/b57843c6-70be-4799-b78f-4af8753f77c4/",
+      "original_name": "ES_Escape - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option1_energy_consistency",
+      "set_index": 1,
+      "track_index": 3,
+      "filename": "option1_energy_consistency_track_03.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option1_energy_consistency\\option1_energy_consistency_track_03.mp3",
+      "size_mb": 5.65,
+      "url": "https://www.epidemicsound.com/music/tracks/c8e67717-51fe-4686-a287-046feca07f62/",
+      "original_name": "ES_Intercept - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option1_energy_consistency",
+      "set_index": 1,
+      "track_index": 4,
+      "filename": "option1_energy_consistency_track_04.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option1_energy_consistency\\option1_energy_consistency_track_04.mp3",
+      "size_mb": 7.34,
+      "url": "https://www.epidemicsound.com/music/tracks/8d1c84b4-a524-4598-8b66-9b7ee3058da7/",
+      "original_name": "ES_Mirage - Hallman.mp3"
+    },
+    {
+      "set": "option1_energy_consistency",
+      "set_index": 1,
+      "track_index": 5,
+      "filename": "option1_energy_consistency_track_05.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option1_energy_consistency\\option1_energy_consistency_track_05.mp3",
+      "size_mb": 4.12,
+      "url": "https://www.epidemicsound.com/music/tracks/51c68675-7dd2-4f02-9db6-2ec178f6b912/",
+      "original_name": "ES_Bodies - Felix Johansson Carne.mp3"
+    },
+    {
+      "set": "option1_energy_consistency",
+      "set_index": 1,
+      "track_index": 6,
+      "filename": "option1_energy_consistency_track_06.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option1_energy_consistency\\option1_energy_consistency_track_06.mp3",
+      "size_mb": 6.11,
+      "url": "https://www.epidemicsound.com/music/tracks/2fcaa64b-960c-4fa8-abe3-f433f531760b/",
+      "original_name": "ES_Morning Sun - rh3a bluu.mp3"
+    },
+    {
+      "set": "option2_genre_technical",
+      "set_index": 2,
+      "track_index": 1,
+      "filename": "option2_genre_technical_track_01.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option2_genre_technical\\option2_genre_technical_track_01.mp3",
+      "size_mb": 5.55,
+      "url": "https://www.epidemicsound.com/music/tracks/756ef7c3-23a8-45c4-8a79-a1177ebc26df/",
+      "original_name": "ES_Synthetic - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option2_genre_technical",
+      "set_index": 2,
+      "track_index": 2,
+      "filename": "option2_genre_technical_track_02.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option2_genre_technical\\option2_genre_technical_track_02.mp3",
+      "size_mb": 5.29,
+      "url": "https://www.epidemicsound.com/music/tracks/b57843c6-70be-4799-b78f-4af8753f77c4/",
+      "original_name": "ES_Escape - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option2_genre_technical",
+      "set_index": 2,
+      "track_index": 3,
+      "filename": "option2_genre_technical_track_03.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option2_genre_technical\\option2_genre_technical_track_03.mp3",
+      "size_mb": 5.65,
+      "url": "https://www.epidemicsound.com/music/tracks/c8e67717-51fe-4686-a287-046feca07f62/",
+      "original_name": "ES_Intercept - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option2_genre_technical",
+      "set_index": 2,
+      "track_index": 4,
+      "filename": "option2_genre_technical_track_04.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option2_genre_technical\\option2_genre_technical_track_04.mp3",
+      "size_mb": 7.34,
+      "url": "https://www.epidemicsound.com/music/tracks/8d1c84b4-a524-4598-8b66-9b7ee3058da7/",
+      "original_name": "ES_Mirage - Hallman.mp3"
+    },
+    {
+      "set": "option2_genre_technical",
+      "set_index": 2,
+      "track_index": 5,
+      "filename": "option2_genre_technical_track_05.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option2_genre_technical\\option2_genre_technical_track_05.mp3",
+      "size_mb": 4.12,
+      "url": "https://www.epidemicsound.com/music/tracks/51c68675-7dd2-4f02-9db6-2ec178f6b912/",
+      "original_name": "ES_Bodies - Felix Johansson Carne.mp3"
+    },
+    {
+      "set": "option2_genre_technical",
+      "set_index": 2,
+      "track_index": 6,
+      "filename": "option2_genre_technical_track_06.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option2_genre_technical\\option2_genre_technical_track_06.mp3",
+      "size_mb": 6.11,
+      "url": "https://www.epidemicsound.com/music/tracks/2fcaa64b-960c-4fa8-abe3-f433f531760b/",
+      "original_name": "ES_Morning Sun - rh3a bluu.mp3"
+    },
+    {
+      "set": "option3_usecase_engineering",
+      "set_index": 3,
+      "track_index": 1,
+      "filename": "option3_usecase_engineering_track_01.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option3_usecase_engineering\\option3_usecase_engineering_track_01.mp3",
+      "size_mb": 5.55,
+      "url": "https://www.epidemicsound.com/music/tracks/756ef7c3-23a8-45c4-8a79-a1177ebc26df/",
+      "original_name": "ES_Synthetic - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option3_usecase_engineering",
+      "set_index": 3,
+      "track_index": 2,
+      "filename": "option3_usecase_engineering_track_02.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option3_usecase_engineering\\option3_usecase_engineering_track_02.mp3",
+      "size_mb": 5.29,
+      "url": "https://www.epidemicsound.com/music/tracks/b57843c6-70be-4799-b78f-4af8753f77c4/",
+      "original_name": "ES_Escape - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option3_usecase_engineering",
+      "set_index": 3,
+      "track_index": 3,
+      "filename": "option3_usecase_engineering_track_03.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option3_usecase_engineering\\option3_usecase_engineering_track_03.mp3",
+      "size_mb": 5.65,
+      "url": "https://www.epidemicsound.com/music/tracks/c8e67717-51fe-4686-a287-046feca07f62/",
+      "original_name": "ES_Intercept - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option3_usecase_engineering",
+      "set_index": 3,
+      "track_index": 4,
+      "filename": "option3_usecase_engineering_track_04.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option3_usecase_engineering\\option3_usecase_engineering_track_04.mp3",
+      "size_mb": 7.34,
+      "url": "https://www.epidemicsound.com/music/tracks/8d1c84b4-a524-4598-8b66-9b7ee3058da7/",
+      "original_name": "ES_Mirage - Hallman.mp3"
+    },
+    {
+      "set": "option3_usecase_engineering",
+      "set_index": 3,
+      "track_index": 5,
+      "filename": "option3_usecase_engineering_track_05.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option3_usecase_engineering\\option3_usecase_engineering_track_05.mp3",
+      "size_mb": 4.12,
+      "url": "https://www.epidemicsound.com/music/tracks/51c68675-7dd2-4f02-9db6-2ec178f6b912/",
+      "original_name": "ES_Bodies - Felix Johansson Carne.mp3"
+    },
+    {
+      "set": "option3_usecase_engineering",
+      "set_index": 3,
+      "track_index": 6,
+      "filename": "option3_usecase_engineering_track_06.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option3_usecase_engineering\\option3_usecase_engineering_track_06.mp3",
+      "size_mb": 6.11,
+      "url": "https://www.epidemicsound.com/music/tracks/2fcaa64b-960c-4fa8-abe3-f433f531760b/",
+      "original_name": "ES_Morning Sun - rh3a bluu.mp3"
+    },
+    {
+      "set": "option4_simple_exclusions",
+      "set_index": 4,
+      "track_index": 1,
+      "filename": "option4_simple_exclusions_track_01.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option4_simple_exclusions\\option4_simple_exclusions_track_01.mp3",
+      "size_mb": 5.55,
+      "url": "https://www.epidemicsound.com/music/tracks/756ef7c3-23a8-45c4-8a79-a1177ebc26df/",
+      "original_name": "ES_Synthetic - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option4_simple_exclusions",
+      "set_index": 4,
+      "track_index": 2,
+      "filename": "option4_simple_exclusions_track_02.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option4_simple_exclusions\\option4_simple_exclusions_track_02.mp3",
+      "size_mb": 5.29,
+      "url": "https://www.epidemicsound.com/music/tracks/b57843c6-70be-4799-b78f-4af8753f77c4/",
+      "original_name": "ES_Escape - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option4_simple_exclusions",
+      "set_index": 4,
+      "track_index": 3,
+      "filename": "option4_simple_exclusions_track_03.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option4_simple_exclusions\\option4_simple_exclusions_track_03.mp3",
+      "size_mb": 5.65,
+      "url": "https://www.epidemicsound.com/music/tracks/c8e67717-51fe-4686-a287-046feca07f62/",
+      "original_name": "ES_Intercept - Hampus Naeselius.mp3"
+    },
+    {
+      "set": "option4_simple_exclusions",
+      "set_index": 4,
+      "track_index": 4,
+      "filename": "option4_simple_exclusions_track_04.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option4_simple_exclusions\\option4_simple_exclusions_track_04.mp3",
+      "size_mb": 7.34,
+      "url": "https://www.epidemicsound.com/music/tracks/8d1c84b4-a524-4598-8b66-9b7ee3058da7/",
+      "original_name": "ES_Mirage - Hallman.mp3"
+    },
+    {
+      "set": "option4_simple_exclusions",
+      "set_index": 4,
+      "track_index": 5,
+      "filename": "option4_simple_exclusions_track_05.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option4_simple_exclusions\\option4_simple_exclusions_track_05.mp3",
+      "size_mb": 4.12,
+      "url": "https://www.epidemicsound.com/music/tracks/51c68675-7dd2-4f02-9db6-2ec178f6b912/",
+      "original_name": "ES_Bodies - Felix Johansson Carne.mp3"
+    },
+    {
+      "set": "option4_simple_exclusions",
+      "set_index": 4,
+      "track_index": 6,
+      "filename": "option4_simple_exclusions_track_06.mp3",
+      "path": "background_music_epidemic\\ai_curated\\option4_simple_exclusions\\option4_simple_exclusions_track_06.mp3",
+      "size_mb": 6.11,
+      "url": "https://www.epidemicsound.com/music/tracks/2fcaa64b-960c-4fa8-abe3-f433f531760b/",
+      "original_name": "ES_Morning Sun - rh3a bluu.mp3"
+    }
+  ],
+  "failures": [],
+  "prompt_sets": {
+    "option1_energy_consistency": {
+      "prompt1": "I create high-energy tech and AI tutorial videos with professional voiceover narration.\nI need elect...",
+      "prompt2": "From these results, show me only tracks with steady, consistent volume and rhythm\nthroughout. I need..."
+    },
+    "option2_genre_technical": {
+      "prompt1": "Electronic instrumental background music for educational tech content with continuous\nnarration. Spe...",
+      "prompt2": "Filter for tracks optimized for voice-over work: consistent volume levels, minimal\ndynamic compressi..."
+    },
+    "option3_usecase_engineering": {
+      "prompt1": "Background music for fast-paced AI and technology tutorial videos with continuous\nprofessional narra...",
+      "prompt2": "Narrow results to tracks with these audio characteristics: consistent RMS levels\nthroughout, low dyn..."
+    },
+    "option4_simple_exclusions": {
+      "prompt1": "Instrumental electronic music for tech tutorial background. Chillstep or minimal\ntechno preferred. 1...",
+      "prompt2": "Exclude: tracks with heavy bass drops, quiet intros over 20 seconds, dramatic\nbuildups, fadeout outr..."
+    }
+  }
+}
