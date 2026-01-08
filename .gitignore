@@ -300,6 +300,10 @@ models/
 config.local.json
 settings.local.json
 
+# General reference documentation (non-project-specific)
+KEYBOARD_SHORTCUTS_*.md
+KEYBOARD_SHORTCUTS_*.html
+
 # --------------------------------------------
 # Keep These Files (Examples & Templates)
 # --------------------------------------------
