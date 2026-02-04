@@ -318,3 +318,5 @@ KEYBOARD_SHORTCUTS_*.html
 _archive/
 *.pyc
 __pycache__/
+.env
+.env.local
