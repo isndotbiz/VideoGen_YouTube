@@ -308,6 +308,8 @@ KEYBOARD_SHORTCUTS_*.html
 # Keep These Files (Examples & Templates)
 # --------------------------------------------
 !.env.example
+!.env.tpl
+!.env.template
 !config.json
 !workflow_config.json
 !prompts.json
@@ -320,3 +322,10 @@ _archive/
 __pycache__/
 .env
 .env.local
+
+# Serena (session-local)
+.serena/cache/
+.serena/memories/
+
+# Local MCP config (machine-specific)
+.mcp.json
